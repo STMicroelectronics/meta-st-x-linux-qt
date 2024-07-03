@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=robotarm3d Demo
+Comment=robotarm3d Qt Demo
+Exec=/usr/local/demo/application/robotarm3d/bin/launch_robotarm3d.sh
+Terminal=false
+Icon=Icon_demo_robotarm3d.svg
+Type=Application
+Categories=Application;3D;Graphics;
+# vi: encoding=utf-8

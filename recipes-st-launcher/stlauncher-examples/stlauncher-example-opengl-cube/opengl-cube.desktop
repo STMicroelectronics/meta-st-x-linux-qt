@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Qt OpenGL Cube
+Comment=Qt OpenGL Cube Example
+Exec=/usr/local/demo/application/stlauncher-examples/bin/launch_opengl-cube.sh
+Terminal=false
+Icon=Icon_demo_opengl-cube.svg
+Type=Application
+Categories=Application;3D;Graphics;
+# vi: encoding=utf-8

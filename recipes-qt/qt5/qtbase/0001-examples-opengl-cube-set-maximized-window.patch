@@ -1,0 +1,27 @@
+From d0f0a1b67f530ff7a4c9ddce32823a948a672177 Mon Sep 17 00:00:00 2001
+From: Karim BEN BELGACEM <karim.ben-belgacem@st.com>
+Date: Mon, 20 May 2024 13:56:45 +0200
+Subject: [PATCH] examples - opengl-cube: set maximized window
+
+Change-Id: I20bc822425506697dd00a5e8a476ba54a4508cd5
+Signed-off-by: Karim BEN BELGACEM <karim.ben-belgacem@st.com>
+---
+ examples/opengl/cube/main.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/examples/opengl/cube/main.cpp b/examples/opengl/cube/main.cpp
+index c5c77d3d5b..b6aff81ef3 100644
+--- a/examples/opengl/cube/main.cpp
++++ b/examples/opengl/cube/main.cpp
+@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
+     app.setApplicationVersion("0.1");
+ #ifndef QT_NO_OPENGL
+     MainWidget widget;
+-    widget.show();
++    widget.showMaximized();
+ #else
+     QLabel note("OpenGL Support required");
+     note.show();
+-- 
+2.34.1
+

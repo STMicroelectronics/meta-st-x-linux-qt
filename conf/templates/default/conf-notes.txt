@@ -1,0 +1,4 @@
+Available images for meta-st-x-linux-qt layer are:
+
+  - Official X-LINUX-QT images:
+      st-image-qt           -   OpenSTLinux weston image with basic Qt Framework support

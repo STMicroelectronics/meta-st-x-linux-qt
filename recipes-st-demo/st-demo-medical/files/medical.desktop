@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Medical Demo
+Comment=Medical Qt Demo
+Exec=/usr/local/demo/application/medical/bin/launch_medical.sh
+Terminal=false
+Icon=Icon_demo_medical.svg
+Type=Application
+Categories=Application;2D;Graphics;
+# vi: encoding=utf-8

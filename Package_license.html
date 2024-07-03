@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Licensed Materials Terms for X-LINUX-QT</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <style type="text/css">@charset "UTF-8";
+
+
+
+:root {
+--fore-color: #03234b;
+--secondary-fore-color: #03234b;
+--back-color: #ffffff;
+--secondary-back-color: #ffffff;
+--code-back-color: #f8f8f8;
+--blockquote-color: #e6007e;
+--pre-color: #e6007e;
+--border-color: #3cb4e6;
+--secondary-border-color: #3cb4e6;
+--heading-ratio: 1.2;
+--universal-margin: 0.5rem;
+--universal-padding: 0.25rem;
+--universal-border-radius: 0.075rem;
+--background-margin: 1.5%;
+--a-link-color: #3cb4e6;
+--a-visited-color: #8c0078; }
+html {
+font-size: 13.5px; }
+a, b, del, em, i, ins, q, span, strong, u {
+font-size: 1em; }
+html, * {
+font-family: -apple-system, BlinkMacSystemFont, Helvetica, arial, sans-serif;
+line-height: 1.25;
+-webkit-text-size-adjust: 100%; }
+* {
+font-size: 1rem; }
+body {
+margin: 0;
+color: var(--fore-color);
+@background: var(--back-color);
+background: var(--back-color) linear-gradient(#ffd200, #ffd200) repeat-y left top;
+background-size: var(--background-margin);
+}
+details {
+display: block; }
+summary {
+display: list-item; }
+abbr[title] {
+border-bottom: none;
+text-decoration: underline dotted; }
+input {
+overflow: visible; }
+img {
+max-width: 100%;
+height: auto; }
+h1, h2, h3, h4, h5, h6 {
+line-height: 1.25;
+margin: calc(1.5 * var(--universal-margin)) var(--universal-margin);
+font-weight: 400; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+color: var(--secondary-fore-color);
+display: block;
+margin-top: -0.25rem; }
+h1 {
+font-size: calc(1rem * var(--heading-ratio) * var(--heading-ratio) * var(--heading-ratio)); }
+h2 {
+font-size: calc(1rem * var(--heading-ratio) * var(--heading-ratio) );
+border-style: none none solid none ; border-width: thin;
+border-color: var(--border-color); }
+h3 {
+font-size: calc(1rem * var(--heading-ratio) ); }
+h4 {
+font-size: calc(1rem * var(--heading-ratio)); }
+h5 {
+font-size: 1rem; }
+h6 {
+font-size: calc(1rem / var(--heading-ratio)); }
+p {
+margin: var(--universal-margin); }
+ol, ul {
+margin: var(--universal-margin);
+padding-left: calc(3 * var(--universal-margin)); }
+b, strong {
+font-weight: 700; }
+hr {
+box-sizing: content-box;
+border: 0;
+line-height: 1.25em;
+margin: var(--universal-margin);
+height: 0.0714285714rem;
+background: linear-gradient(to right, transparent, var(--border-color) 20%, var(--border-color) 80%, transparent); }
+blockquote {
+display: block;
+position: relative;
+font-style: italic;
+color: var(--secondary-fore-color);
+margin: var(--universal-margin);
+padding: calc(3 * var(--universal-padding));
+border: 0.0714285714rem solid var(--secondary-border-color);
+border-left: 0.3rem solid var(--blockquote-color);
+border-radius: 0 var(--universal-border-radius) var(--universal-border-radius) 0; }
+blockquote:before {
+position: absolute;
+top: calc(0rem - var(--universal-padding));
+left: 0;
+font-family: sans-serif;
+font-size: 2rem;
+font-weight: 800;
+content: "\201c";
+color: var(--blockquote-color); }
+blockquote[cite]:after {
+font-style: normal;
+font-size: 0.75em;
+font-weight: 700;
+content: "\a— " attr(cite);
+white-space: pre; }
+pre, kbd, samp {
+font-family: Menlo, Consolas, monospace;
+font-size: 0.85em; }
+code {
+font-family: Menlo, Consolas, monospace;
+background: var(--code-back-color);
+border-radius: var(--universal-border-radius);
+padding: calc(var(--universal-padding) / 4) calc(var(--universal-padding) / 2); }
+kbd {
+background: var(--fore-color);
+color: var(--back-color);
+border-radius: var(--universal-border-radius);
+padding: calc(var(--universal-padding) / 4) calc(var(--universal-padding) / 2); }
+pre {
+overflow: auto;
+background: var(--code-back-color);
+padding: calc(1.5 * var(--universal-padding));
+margin: var(--universal-margin);
+border: 0.0714285714rem solid var(--secondary-border-color);
+
+border-radius: 0 var(--universal-border-radius) var(--universal-border-radius) 0; }
+sup, sub, code, kbd {
+line-height: 0;
+position: relative;
+vertical-align: baseline; }
+small, sup, sub, figcaption {
+font-size: 0.75em; }
+sup {
+top: -0.5em; }
+sub {
+bottom: -0.25em; }
+figure {
+margin: var(--universal-margin); }
+figcaption {
+color: var(--secondary-fore-color); }
+a {
+text-decoration: none; }
+a:link {
+color: var(--a-link-color); }
+a:visited {
+color: var(--a-visited-color); }
+a:hover, a:focus {
+text-decoration: underline; }
+
+.container {
+margin: 0 auto;
+padding: 0 calc(1.5 * var(--universal-padding)); }
+.row {
+box-sizing: border-box;
+display: flex;
+flex: 0 1 auto;
+flex-flow: row wrap;
+margin: 0 0 0 var(--background-margin); }
+.col-sm,
+[class^='col-sm-'],
+[class^='col-sm-offset-'],
+.row[class*='cols-sm-'] > * {
+box-sizing: border-box;
+flex: 0 0 auto;
+padding: 0 calc(var(--universal-padding) / 2); }
+.col-sm,
+.row.cols-sm > * {
+max-width: 100%;
+flex-grow: 1;
+flex-basis: 0; }
+.col-sm-1,
+.row.cols-sm-1 > * {
+max-width: 8.3333333333%;
+flex-basis: 8.3333333333%; }
+.col-sm-offset-0 {
+margin-left: 0; }
+.col-sm-2,
+.row.cols-sm-2 > * {
+max-width: 16.6666666667%;
+flex-basis: 16.6666666667%; }
+.col-sm-offset-1 {
+margin-left: 8.3333333333%; }
+.col-sm-3,
+.row.cols-sm-3 > * {
+max-width: 25%;
+flex-basis: 25%; }
+.col-sm-offset-2 {
+margin-left: 16.6666666667%; }
+.col-sm-4,
+.row.cols-sm-4 > * {
+max-width: 33.3333333333%;
+flex-basis: 33.3333333333%; }
+.col-sm-offset-3 {
+margin-left: 25%; }
+.col-sm-5,
+.row.cols-sm-5 > * {
+max-width: 41.6666666667%;
+flex-basis: 41.6666666667%; }
+.col-sm-offset-4 {
+margin-left: 33.3333333333%; }
+.col-sm-6,
+.row.cols-sm-6 > * {
+max-width: 50%;
+flex-basis: 50%; }
+.col-sm-offset-5 {
+margin-left: 41.6666666667%; }
+.col-sm-7,
+.row.cols-sm-7 > * {
+max-width: 58.3333333333%;
+flex-basis: 58.3333333333%; }
+.col-sm-offset-6 {
+margin-left: 50%; }
+.col-sm-8,
+.row.cols-sm-8 > * {
+max-width: 66.6666666667%;
+flex-basis: 66.6666666667%; }
+.col-sm-offset-7 {
+margin-left: 58.3333333333%; }
+.col-sm-9,
+.row.cols-sm-9 > * {
+max-width: 75%;
+flex-basis: 75%; }
+.col-sm-offset-8 {
+margin-left: 66.6666666667%; }
+.col-sm-10,
+.row.cols-sm-10 > * {
+max-width: 83.3333333333%;
+flex-basis: 83.3333333333%; }
+.col-sm-offset-9 {
+margin-left: 75%; }
+.col-sm-11,
+.row.cols-sm-11 > * {
+max-width: 91.6666666667%;
+flex-basis: 91.6666666667%; }
+.col-sm-offset-10 {
+margin-left: 83.3333333333%; }
+.col-sm-12,
+.row.cols-sm-12 > * {
+max-width: 100%;
+flex-basis: 100%; }
+.col-sm-offset-11 {
+margin-left: 91.6666666667%; }
+.col-sm-normal {
+order: initial; }
+.col-sm-first {
+order: -999; }
+.col-sm-last {
+order: 999; }
+@media screen and (min-width: 500px) {
+.col-md,
+[class^='col-md-'],
+[class^='col-md-offset-'],
+.row[class*='cols-md-'] > * {
+box-sizing: border-box;
+flex: 0 0 auto;
+padding: 0 calc(var(--universal-padding) / 2); }
+.col-md,
+.row.cols-md > * {
+max-width: 100%;
+flex-grow: 1;
+flex-basis: 0; }
+.col-md-1,
+.row.cols-md-1 > * {
+max-width: 8.3333333333%;
+flex-basis: 8.3333333333%; }
+.col-md-offset-0 {
+margin-left: 0; }
+.col-md-2,
+.row.cols-md-2 > * {
+max-width: 16.6666666667%;
+flex-basis: 16.6666666667%; }
+.col-md-offset-1 {
+margin-left: 8.3333333333%; }
+.col-md-3,
+.row.cols-md-3 > * {
+max-width: 25%;
+flex-basis: 25%; }
+.col-md-offset-2 {
+margin-left: 16.6666666667%; }
+.col-md-4,
+.row.cols-md-4 > * {
+max-width: 33.3333333333%;
+flex-basis: 33.3333333333%; }
+.col-md-offset-3 {
+margin-left: 25%; }
+.col-md-5,
+.row.cols-md-5 > * {
+max-width: 41.6666666667%;
+flex-basis: 41.6666666667%; }
+.col-md-offset-4 {
+margin-left: 33.3333333333%; }
+.col-md-6,
+.row.cols-md-6 > * {
+max-width: 50%;
+flex-basis: 50%; }
+.col-md-offset-5 {
+margin-left: 41.6666666667%; }
+.col-md-7,
+.row.cols-md-7 > * {
+max-width: 58.3333333333%;
+flex-basis: 58.3333333333%; }
+.col-md-offset-6 {
+margin-left: 50%; }
+.col-md-8,
+.row.cols-md-8 > * {
+max-width: 66.6666666667%;
+flex-basis: 66.6666666667%; }
+.col-md-offset-7 {
+margin-left: 58.3333333333%; }
+.col-md-9,
+.row.cols-md-9 > * {
+max-width: 75%;
+flex-basis: 75%; }
+.col-md-offset-8 {
+margin-left: 66.6666666667%; }
+.col-md-10,
+.row.cols-md-10 > * {
+max-width: 83.3333333333%;
+flex-basis: 83.3333333333%; }
+.col-md-offset-9 {
+margin-left: 75%; }
+.col-md-11,
+.row.cols-md-11 > * {
+max-width: 91.6666666667%;
+flex-basis: 91.6666666667%; }
+.col-md-offset-10 {
+margin-left: 83.3333333333%; }
+.col-md-12,
+.row.cols-md-12 > * {
+max-width: 100%;
+flex-basis: 100%; }
+.col-md-offset-11 {
+margin-left: 91.6666666667%; }
+.col-md-normal {
+order: initial; }
+.col-md-first {
+order: -999; }
+.col-md-last {
+order: 999; } }
+@media screen and (min-width: 1280px) {
+.col-lg,
+[class^='col-lg-'],
+[class^='col-lg-offset-'],
+.row[class*='cols-lg-'] > * {
+box-sizing: border-box;
+flex: 0 0 auto;
+padding: 0 calc(var(--universal-padding) / 2); }
+.col-lg,
+.row.cols-lg > * {
+max-width: 100%;
+flex-grow: 1;
+flex-basis: 0; }
+.col-lg-1,
+.row.cols-lg-1 > * {
+max-width: 8.3333333333%;
+flex-basis: 8.3333333333%; }
+.col-lg-offset-0 {
+margin-left: 0; }
+.col-lg-2,
+.row.cols-lg-2 > * {
+max-width: 16.6666666667%;
+flex-basis: 16.6666666667%; }
+.col-lg-offset-1 {
+margin-left: 8.3333333333%; }
+.col-lg-3,
+.row.cols-lg-3 > * {
+max-width: 25%;
+flex-basis: 25%; }
+.col-lg-offset-2 {
+margin-left: 16.6666666667%; }
+.col-lg-4,
+.row.cols-lg-4 > * {
+max-width: 33.3333333333%;
+flex-basis: 33.3333333333%; }
+.col-lg-offset-3 {
+margin-left: 25%; }
+.col-lg-5,
+.row.cols-lg-5 > * {
+max-width: 41.6666666667%;
+flex-basis: 41.6666666667%; }
+.col-lg-offset-4 {
+margin-left: 33.3333333333%; }
+.col-lg-6,
+.row.cols-lg-6 > * {
+max-width: 50%;
+flex-basis: 50%; }
+.col-lg-offset-5 {
+margin-left: 41.6666666667%; }
+.col-lg-7,
+.row.cols-lg-7 > * {
+max-width: 58.3333333333%;
+flex-basis: 58.3333333333%; }
+.col-lg-offset-6 {
+margin-left: 50%; }
+.col-lg-8,
+.row.cols-lg-8 > * {
+max-width: 66.6666666667%;
+flex-basis: 66.6666666667%; }
+.col-lg-offset-7 {
+margin-left: 58.3333333333%; }
+.col-lg-9,
+.row.cols-lg-9 > * {
+max-width: 75%;
+flex-basis: 75%; }
+.col-lg-offset-8 {
+margin-left: 66.6666666667%; }
+.col-lg-10,
+.row.cols-lg-10 > * {
+max-width: 83.3333333333%;
+flex-basis: 83.3333333333%; }
+.col-lg-offset-9 {
+margin-left: 75%; }
+.col-lg-11,
+.row.cols-lg-11 > * {
+max-width: 91.6666666667%;
+flex-basis: 91.6666666667%; }
+.col-lg-offset-10 {
+margin-left: 83.3333333333%; }
+.col-lg-12,
+.row.cols-lg-12 > * {
+max-width: 100%;
+flex-basis: 100%; }
+.col-lg-offset-11 {
+margin-left: 91.6666666667%; }
+.col-lg-normal {
+order: initial; }
+.col-lg-first {
+order: -999; }
+.col-lg-last {
+order: 999; } }
+
+:root {
+--card-back-color: #3cb4e6;
+--card-fore-color: #03234b;
+--card-border-color: #03234b; }
+.card {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-self: center;
+position: relative;
+width: 100%;
+background: var(--card-back-color);
+color: var(--card-fore-color);
+border: 0.0714285714rem solid var(--card-border-color);
+border-radius: var(--universal-border-radius);
+margin: var(--universal-margin);
+overflow: hidden; }
+@media screen and (min-width: 320px) {
+.card {
+max-width: 320px; } }
+.card > .sectione {
+background: var(--card-back-color);
+color: var(--card-fore-color);
+box-sizing: border-box;
+margin: 0;
+border: 0;
+border-radius: 0;
+border-bottom: 0.0714285714rem solid var(--card-border-color);
+padding: var(--universal-padding);
+width: 100%; }
+.card > .sectione.media {
+height: 200px;
+padding: 0;
+-o-object-fit: cover;
+object-fit: cover; }
+.card > .sectione:last-child {
+border-bottom: 0; }
+
+@media screen and (min-width: 240px) {
+.card.small {
+max-width: 240px; } }
+@media screen and (min-width: 480px) {
+.card.large {
+max-width: 480px; } }
+.card.fluid {
+max-width: 100%;
+width: auto; }
+.card.warning {
+--card-back-color: #e5b8b7;
+--card-fore-color: #3b234b;
+--card-border-color: #8c0078; }
+.card.error {
+--card-back-color: #464650;
+--card-fore-color: #ffffff;
+--card-border-color: #8c0078; }
+.card > .sectione.dark {
+--card-back-color: #3b234b;
+--card-fore-color: #ffffff; }
+.card > .sectione.double-padded {
+padding: calc(1.5 * var(--universal-padding)); }
+
+
+:root {
+--form-back-color: #ffe97f;
+--form-fore-color: #03234b;
+--form-border-color: #3cb4e6;
+--input-back-color: #ffffff;
+--input-fore-color: #03234b;
+--input-border-color: #3cb4e6;
+--input-focus-color: #0288d1;
+--input-invalid-color: #d32f2f;
+--button-back-color: #e2e2e2;
+--button-hover-back-color: #dcdcdc;
+--button-fore-color: #212121;
+--button-border-color: transparent;
+--button-hover-border-color: transparent;
+--button-group-border-color: rgba(124, 124, 124, 0.54); }
+form {
+background: var(--form-back-color);
+color: var(--form-fore-color);
+border: 0.0714285714rem solid var(--form-border-color);
+border-radius: var(--universal-border-radius);
+margin: var(--universal-margin);
+padding: calc(2 * var(--universal-padding)) var(--universal-padding); }
+fieldset {
+border: 0.0714285714rem solid var(--form-border-color);
+border-radius: var(--universal-border-radius);
+margin: calc(var(--universal-margin) / 4);
+padding: var(--universal-padding); }
+legend {
+box-sizing: border-box;
+display: table;
+max-width: 100%;
+white-space: normal;
+font-weight: 500;
+padding: calc(var(--universal-padding) / 2); }
+label {
+padding: calc(var(--universal-padding) / 2) var(--universal-padding); }
+.input-group {
+display: inline-block; }
+.input-group.fluid {
+display: flex;
+align-items: center;
+justify-content: center; }
+.input-group.fluid > input {
+max-width: 100%;
+flex-grow: 1;
+flex-basis: 0px; }
+@media screen and (max-width: 499px) {
+.input-group.fluid {
+align-items: stretch;
+flex-direction: column; } }
+.input-group.vertical {
+display: flex;
+align-items: stretch;
+flex-direction: column; }
+.input-group.vertical > input {
+max-width: 100%;
+flex-grow: 1;
+flex-basis: 0px; }
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+height: auto; }
+[type="search"] {
+-webkit-appearance: textfield;
+outline-offset: -2px; }
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+-webkit-appearance: none; }
+input:not([type]), [type="text"], [type="email"], [type="number"], [type="search"],
+[type="password"], [type="url"], [type="tel"], [type="checkbox"], [type="radio"], textarea, select {
+box-sizing: border-box;
+background: var(--input-back-color);
+color: var(--input-fore-color);
+border: 0.0714285714rem solid var(--input-border-color);
+border-radius: var(--universal-border-radius);
+margin: calc(var(--universal-margin) / 2);
+padding: var(--universal-padding) calc(1.5 * var(--universal-padding)); }
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):hover, input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus, textarea:hover, textarea:focus, select:hover, select:focus {
+border-color: var(--input-focus-color);
+box-shadow: none; }
+input:not([type="button"]):not([type="submit"]):not([type="reset"]):invalid, input:not([type="button"]):not([type="submit"]):not([type="reset"]):focus:invalid, textarea:invalid, textarea:focus:invalid, select:invalid, select:focus:invalid {
+border-color: var(--input-invalid-color);
+box-shadow: none; }
+input:not([type="button"]):not([type="submit"]):not([type="reset"])[readonly], textarea[readonly], select[readonly] {
+background: var(--secondary-back-color); }
+select {
+max-width: 100%; }
+option {
+overflow: hidden;
+text-overflow: ellipsis; }
+[type="checkbox"], [type="radio"] {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+position: relative;
+height: calc(1rem + var(--universal-padding) / 2);
+width: calc(1rem + var(--universal-padding) / 2);
+vertical-align: text-bottom;
+padding: 0;
+flex-basis: calc(1rem + var(--universal-padding) / 2) !important;
+flex-grow: 0 !important; }
+[type="checkbox"]:checked:before, [type="radio"]:checked:before {
+position: absolute; }
+[type="checkbox"]:checked:before {
+content: '\2713';
+font-family: sans-serif;
+font-size: calc(1rem + var(--universal-padding) / 2);
+top: calc(0rem - var(--universal-padding));
+left: calc(var(--universal-padding) / 4); }
+[type="radio"] {
+border-radius: 100%; }
+[type="radio"]:checked:before {
+border-radius: 100%;
+content: '';
+top: calc(0.0714285714rem + var(--universal-padding) / 2);
+left: calc(0.0714285714rem + var(--universal-padding) / 2);
+background: var(--input-fore-color);
+width: 0.5rem;
+height: 0.5rem; }
+:placeholder-shown {
+color: var(--input-fore-color); }
+::-ms-placeholder {
+color: var(--input-fore-color);
+opacity: 0.54; }
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+border-style: none;
+padding: 0; }
+button, html [type="button"], [type="reset"], [type="submit"] {
+-webkit-appearance: button; }
+button {
+overflow: visible;
+text-transform: none; }
+button, [type="button"], [type="submit"], [type="reset"],
+a.button, label.button, .button,
+a[role="button"], label[role="button"], [role="button"] {
+display: inline-block;
+background: var(--button-back-color);
+color: var(--button-fore-color);
+border: 0.0714285714rem solid var(--button-border-color);
+border-radius: var(--universal-border-radius);
+padding: var(--universal-padding) calc(1.5 * var(--universal-padding));
+margin: var(--universal-margin);
+text-decoration: none;
+cursor: pointer;
+transition: background 0.3s; }
+button:hover, button:focus, [type="button"]:hover, [type="button"]:focus, [type="submit"]:hover, [type="submit"]:focus, [type="reset"]:hover, [type="reset"]:focus,
+a.button:hover,
+a.button:focus, label.button:hover, label.button:focus, .button:hover, .button:focus,
+a[role="button"]:hover,
+a[role="button"]:focus, label[role="button"]:hover, label[role="button"]:focus, [role="button"]:hover, [role="button"]:focus {
+background: var(--button-hover-back-color);
+border-color: var(--button-hover-border-color); }
+input:disabled, input[disabled], textarea:disabled, textarea[disabled], select:disabled, select[disabled], button:disabled, button[disabled], .button:disabled, .button[disabled], [role="button"]:disabled, [role="button"][disabled] {
+cursor: not-allowed;
+opacity: 0.75; }
+.button-group {
+display: flex;
+border: 0.0714285714rem solid var(--button-group-border-color);
+border-radius: var(--universal-border-radius);
+margin: var(--universal-margin); }
+.button-group > button, .button-group [type="button"], .button-group > [type="submit"], .button-group > [type="reset"], .button-group > .button, .button-group > [role="button"] {
+margin: 0;
+max-width: 100%;
+flex: 1 1 auto;
+text-align: center;
+border: 0;
+border-radius: 0;
+box-shadow: none; }
+.button-group > :not(:first-child) {
+border-left: 0.0714285714rem solid var(--button-group-border-color); }
+@media screen and (max-width: 499px) {
+.button-group {
+flex-direction: column; }
+.button-group > :not(:first-child) {
+border: 0;
+border-top: 0.0714285714rem solid var(--button-group-border-color); } }
+
+button.primary, [type="button"].primary, [type="submit"].primary, [type="reset"].primary, .button.primary, [role="button"].primary {
+--button-back-color: #1976d2;
+--button-fore-color: #f8f8f8; }
+button.primary:hover, button.primary:focus, [type="button"].primary:hover, [type="button"].primary:focus, [type="submit"].primary:hover, [type="submit"].primary:focus, [type="reset"].primary:hover, [type="reset"].primary:focus, .button.primary:hover, .button.primary:focus, [role="button"].primary:hover, [role="button"].primary:focus {
+--button-hover-back-color: #1565c0; }
+button.secondary, [type="button"].secondary, [type="submit"].secondary, [type="reset"].secondary, .button.secondary, [role="button"].secondary {
+--button-back-color: #d32f2f;
+--button-fore-color: #f8f8f8; }
+button.secondary:hover, button.secondary:focus, [type="button"].secondary:hover, [type="button"].secondary:focus, [type="submit"].secondary:hover, [type="submit"].secondary:focus, [type="reset"].secondary:hover, [type="reset"].secondary:focus, .button.secondary:hover, .button.secondary:focus, [role="button"].secondary:hover, [role="button"].secondary:focus {
+--button-hover-back-color: #c62828; }
+button.tertiary, [type="button"].tertiary, [type="submit"].tertiary, [type="reset"].tertiary, .button.tertiary, [role="button"].tertiary {
+--button-back-color: #308732;
+--button-fore-color: #f8f8f8; }
+button.tertiary:hover, button.tertiary:focus, [type="button"].tertiary:hover, [type="button"].tertiary:focus, [type="submit"].tertiary:hover, [type="submit"].tertiary:focus, [type="reset"].tertiary:hover, [type="reset"].tertiary:focus, .button.tertiary:hover, .button.tertiary:focus, [role="button"].tertiary:hover, [role="button"].tertiary:focus {
+--button-hover-back-color: #277529; }
+button.inverse, [type="button"].inverse, [type="submit"].inverse, [type="reset"].inverse, .button.inverse, [role="button"].inverse {
+--button-back-color: #212121;
+--button-fore-color: #f8f8f8; }
+button.inverse:hover, button.inverse:focus, [type="button"].inverse:hover, [type="button"].inverse:focus, [type="submit"].inverse:hover, [type="submit"].inverse:focus, [type="reset"].inverse:hover, [type="reset"].inverse:focus, .button.inverse:hover, .button.inverse:focus, [role="button"].inverse:hover, [role="button"].inverse:focus {
+--button-hover-back-color: #111; }
+button.small, [type="button"].small, [type="submit"].small, [type="reset"].small, .button.small, [role="button"].small {
+padding: calc(0.5 * var(--universal-padding)) calc(0.75 * var(--universal-padding));
+margin: var(--universal-margin); }
+button.large, [type="button"].large, [type="submit"].large, [type="reset"].large, .button.large, [role="button"].large {
+padding: calc(1.5 * var(--universal-padding)) calc(2 * var(--universal-padding));
+margin: var(--universal-margin); }
+
+
+:root {
+--header-back-color: #03234b;
+--header-hover-back-color: #ffd200;
+--header-fore-color: #ffffff;
+--header-border-color: #3cb4e6;
+--nav-back-color: #ffffff;
+--nav-hover-back-color: #ffe97f;
+--nav-fore-color: #e6007e;
+--nav-border-color: #3cb4e6;
+--nav-link-color: #3cb4e6;
+--footer-fore-color: #ffffff;
+--footer-back-color: #03234b;
+--footer-border-color: #3cb4e6;
+--footer-link-color: #3cb4e6;
+--drawer-back-color: #ffffff;
+--drawer-hover-back-color: #ffe97f;
+--drawer-border-color: #3cb4e6;
+--drawer-close-color: #e6007e; }
+header {
+height: 2.75rem;
+background: var(--header-back-color);
+color: var(--header-fore-color);
+border-bottom: 0.0714285714rem solid var(--header-border-color);
+padding: calc(var(--universal-padding) / 4) 0;
+white-space: nowrap;
+overflow-x: auto;
+overflow-y: hidden; }
+header.row {
+box-sizing: content-box; }
+header .logo {
+color: var(--header-fore-color);
+font-size: 1.75rem;
+padding: var(--universal-padding) calc(2 * var(--universal-padding));
+text-decoration: none; }
+header button, header [type="button"], header .button, header [role="button"] {
+box-sizing: border-box;
+position: relative;
+top: calc(0rem - var(--universal-padding) / 4);
+height: calc(3.1875rem + var(--universal-padding) / 2);
+background: var(--header-back-color);
+line-height: calc(3.1875rem - var(--universal-padding) * 1.5);
+text-align: center;
+color: var(--header-fore-color);
+border: 0;
+border-radius: 0;
+margin: 0;
+text-transform: uppercase; }
+header button:hover, header button:focus, header [type="button"]:hover, header [type="button"]:focus, header .button:hover, header .button:focus, header [role="button"]:hover, header [role="button"]:focus {
+background: var(--header-hover-back-color); }
+nav {
+background: var(--nav-back-color);
+color: var(--nav-fore-color);
+border: 0.0714285714rem solid var(--nav-border-color);
+border-radius: var(--universal-border-radius);
+margin: var(--universal-margin); }
+nav * {
+padding: var(--universal-padding) calc(1.5 * var(--universal-padding)); }
+nav a, nav a:visited {
+display: block;
+color: var(--nav-link-color);
+border-radius: var(--universal-border-radius);
+transition: background 0.3s; }
+nav a:hover, nav a:focus, nav a:visited:hover, nav a:visited:focus {
+text-decoration: none;
+background: var(--nav-hover-back-color); }
+nav .sublink-1 {
+position: relative;
+margin-left: calc(2 * var(--universal-padding)); }
+nav .sublink-1:before {
+position: absolute;
+left: calc(var(--universal-padding) - 1 * var(--universal-padding));
+top: -0.0714285714rem;
+content: '';
+height: 100%;
+border: 0.0714285714rem solid var(--nav-border-color);
+border-left: 0; }
+nav .sublink-2 {
+position: relative;
+margin-left: calc(4 * var(--universal-padding)); }
+nav .sublink-2:before {
+position: absolute;
+left: calc(var(--universal-padding) - 3 * var(--universal-padding));
+top: -0.0714285714rem;
+content: '';
+height: 100%;
+border: 0.0714285714rem solid var(--nav-border-color);
+border-left: 0; }
+footer {
+background: var(--footer-back-color);
+color: var(--footer-fore-color);
+border-top: 0.0714285714rem solid var(--footer-border-color);
+padding: calc(2 * var(--universal-padding)) var(--universal-padding);
+font-size: 0.875rem; }
+footer a, footer a:visited {
+color: var(--footer-link-color); }
+header.sticky {
+position: -webkit-sticky;
+position: sticky;
+z-index: 1101;
+top: 0; }
+footer.sticky {
+position: -webkit-sticky;
+position: sticky;
+z-index: 1101;
+bottom: 0; }
+.drawer-toggle:before {
+display: inline-block;
+position: relative;
+vertical-align: bottom;
+content: '\00a0\2261\00a0';
+font-family: sans-serif;
+font-size: 1.5em; }
+@media screen and (min-width: 500px) {
+.drawer-toggle:not(.persistent) {
+display: none; } }
+[type="checkbox"].drawer {
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+position: absolute;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%); }
+[type="checkbox"].drawer + * {
+display: block;
+box-sizing: border-box;
+position: fixed;
+top: 0;
+width: 320px;
+height: 100vh;
+overflow-y: auto;
+background: var(--drawer-back-color);
+border: 0.0714285714rem solid var(--drawer-border-color);
+border-radius: 0;
+margin: 0;
+z-index: 1110;
+right: -320px;
+transition: right 0.3s; }
+[type="checkbox"].drawer + * .drawer-close {
+position: absolute;
+top: var(--universal-margin);
+right: var(--universal-margin);
+z-index: 1111;
+width: 2rem;
+height: 2rem;
+border-radius: var(--universal-border-radius);
+padding: var(--universal-padding);
+margin: 0;
+cursor: pointer;
+transition: background 0.3s; }
+[type="checkbox"].drawer + * .drawer-close:before {
+display: block;
+content: '\00D7';
+color: var(--drawer-close-color);
+position: relative;
+font-family: sans-serif;
+font-size: 2rem;
+line-height: 1;
+text-align: center; }
+[type="checkbox"].drawer + * .drawer-close:hover, [type="checkbox"].drawer + * .drawer-close:focus {
+background: var(--drawer-hover-back-color); }
+@media screen and (max-width: 320px) {
+[type="checkbox"].drawer + * {
+width: 100%; } }
+[type="checkbox"].drawer:checked + * {
+right: 0; }
+@media screen and (min-width: 500px) {
+[type="checkbox"].drawer:not(.persistent) + * {
+position: static;
+height: 100%;
+z-index: 1100; }
+[type="checkbox"].drawer:not(.persistent) + * .drawer-close {
+display: none; } }
+
+
+:root {
+--table-border-color: #03234b;
+--table-border-separator-color: #03234b;
+--table-head-back-color: #03234b;
+--table-head-fore-color: #ffffff;
+--table-body-back-color: #ffffff;
+--table-body-fore-color: #03234b;
+--table-body-alt-back-color: #f4f4f4; }
+table {
+border-collapse: separate;
+border-spacing: 0;
+margin: 0;
+display: flex;
+flex: 0 1 auto;
+flex-flow: row wrap;
+padding: var(--universal-padding);
+padding-top: 0; }
+table caption {
+font-size: 1rem;
+margin: calc(2 * var(--universal-margin)) 0;
+max-width: 100%;
+flex: 0 0 100%; }
+table thead, table tbody {
+display: flex;
+flex-flow: row wrap;
+border: 0.0714285714rem solid var(--table-border-color); }
+table thead {
+z-index: 999;
+border-radius: var(--universal-border-radius) var(--universal-border-radius) 0 0;
+border-bottom: 0.0714285714rem solid var(--table-border-separator-color); }
+table tbody {
+border-top: 0;
+margin-top: calc(0 - var(--universal-margin));
+border-radius: 0 0 var(--universal-border-radius) var(--universal-border-radius); }
+table tr {
+display: flex;
+padding: 0; }
+table th, table td {
+padding: calc(0.5 * var(--universal-padding));
+font-size: 0.9rem; }
+table th {
+text-align: left;
+background: var(--table-head-back-color);
+color: var(--table-head-fore-color); }
+table td {
+background: var(--table-body-back-color);
+color: var(--table-body-fore-color);
+border-top: 0.0714285714rem solid var(--table-border-color); }
+table:not(.horizontal) {
+overflow: auto;
+max-height: 100%; }
+table:not(.horizontal) thead, table:not(.horizontal) tbody {
+max-width: 100%;
+flex: 0 0 100%; }
+table:not(.horizontal) tr {
+flex-flow: row wrap;
+flex: 0 0 100%; }
+table:not(.horizontal) th, table:not(.horizontal) td {
+flex: 1 0 0%;
+overflow: hidden;
+text-overflow: ellipsis; }
+table:not(.horizontal) thead {
+position: sticky;
+top: 0; }
+table:not(.horizontal) tbody tr:first-child td {
+border-top: 0; }
+table.horizontal {
+border: 0; }
+table.horizontal thead, table.horizontal tbody {
+border: 0;
+flex: .2 0 0;
+flex-flow: row nowrap; }
+table.horizontal tbody {
+overflow: auto;
+justify-content: space-between;
+flex: .8 0 0;
+margin-left: 0;
+padding-bottom: calc(var(--universal-padding) / 4); }
+table.horizontal tr {
+flex-direction: column;
+flex: 1 0 auto; }
+table.horizontal th, table.horizontal td {
+width: auto;
+border: 0;
+border-bottom: 0.0714285714rem solid var(--table-border-color); }
+table.horizontal th:not(:first-child), table.horizontal td:not(:first-child) {
+border-top: 0; }
+table.horizontal th {
+text-align: right;
+border-left: 0.0714285714rem solid var(--table-border-color);
+border-right: 0.0714285714rem solid var(--table-border-separator-color); }
+table.horizontal thead tr:first-child {
+padding-left: 0; }
+table.horizontal th:first-child, table.horizontal td:first-child {
+border-top: 0.0714285714rem solid var(--table-border-color); }
+table.horizontal tbody tr:last-child td {
+border-right: 0.0714285714rem solid var(--table-border-color); }
+table.horizontal tbody tr:last-child td:first-child {
+border-top-right-radius: 0.25rem; }
+table.horizontal tbody tr:last-child td:last-child {
+border-bottom-right-radius: 0.25rem; }
+table.horizontal thead tr:first-child th:first-child {
+border-top-left-radius: 0.25rem; }
+table.horizontal thead tr:first-child th:last-child {
+border-bottom-left-radius: 0.25rem; }
+@media screen and (max-width: 499px) {
+table, table.horizontal {
+border-collapse: collapse;
+border: 0;
+width: 100%;
+display: table; }
+table thead, table th, table.horizontal thead, table.horizontal th {
+border: 0;
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%); }
+table tbody, table.horizontal tbody {
+border: 0;
+display: table-row-group; }
+table tr, table.horizontal tr {
+display: block;
+border: 0.0714285714rem solid var(--table-border-color);
+border-radius: var(--universal-border-radius);
+background: #ffffff;
+padding: var(--universal-padding);
+margin: var(--universal-margin);
+margin-bottom: calc(1 * var(--universal-margin)); }
+table th, table td, table.horizontal th, table.horizontal td {
+width: auto; }
+table td, table.horizontal td {
+display: block;
+border: 0;
+text-align: right; }
+table td:before, table.horizontal td:before {
+content: attr(data-label);
+float: left;
+font-weight: 600; }
+table th:first-child, table td:first-child, table.horizontal th:first-child, table.horizontal td:first-child {
+border-top: 0; }
+table tbody tr:last-child td, table.horizontal tbody tr:last-child td {
+border-right: 0; } }
+table tr:nth-of-type(2n) > td {
+background: var(--table-body-alt-back-color); }
+@media screen and (max-width: 500px) {
+table tr:nth-of-type(2n) {
+background: var(--table-body-alt-back-color); } }
+:root {
+--table-body-hover-back-color: #90caf9; }
+table.hoverable tr:hover, table.hoverable tr:hover > td, table.hoverable tr:focus, table.hoverable tr:focus > td {
+background: var(--table-body-hover-back-color); }
+@media screen and (max-width: 500px) {
+table.hoverable tr:hover, table.hoverable tr:hover > td, table.hoverable tr:focus, table.hoverable tr:focus > td {
+background: var(--table-body-hover-back-color); } }
+
+
+:root {
+--mark-back-color: #3cb4e6;
+--mark-fore-color: #ffffff; }
+mark {
+background: var(--mark-back-color);
+color: var(--mark-fore-color);
+font-size: 0.95em;
+line-height: 1em;
+border-radius: var(--universal-border-radius);
+padding: calc(var(--universal-padding) / 4) var(--universal-padding); }
+mark.inline-block {
+display: inline-block;
+font-size: 1em;
+line-height: 1.4;
+padding: calc(var(--universal-padding) / 2) var(--universal-padding); }
+:root {
+--toast-back-color: #424242;
+--toast-fore-color: #fafafa; }
+.toast {
+position: fixed;
+bottom: calc(var(--universal-margin) * 3);
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1111;
+color: var(--toast-fore-color);
+background: var(--toast-back-color);
+border-radius: calc(var(--universal-border-radius) * 16);
+padding: var(--universal-padding) calc(var(--universal-padding) * 3); }
+:root {
+--tooltip-back-color: #212121;
+--tooltip-fore-color: #fafafa; }
+.tooltip {
+position: relative;
+display: inline-block; }
+.tooltip:before, .tooltip:after {
+position: absolute;
+opacity: 0;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%);
+transition: all 0.3s;
+z-index: 1010;
+left: 50%; }
+.tooltip:not(.bottom):before, .tooltip:not(.bottom):after {
+bottom: 75%; }
+.tooltip.bottom:before, .tooltip.bottom:after {
+top: 75%; }
+.tooltip:hover:before, .tooltip:hover:after, .tooltip:focus:before, .tooltip:focus:after {
+opacity: 1;
+clip: auto;
+-webkit-clip-path: inset(0%);
+clip-path: inset(0%); }
+.tooltip:before {
+content: '';
+background: transparent;
+border: var(--universal-margin) solid transparent;
+left: calc(50% - var(--universal-margin)); }
+.tooltip:not(.bottom):before {
+border-top-color: #212121; }
+.tooltip.bottom:before {
+border-bottom-color: #212121; }
+.tooltip:after {
+content: attr(aria-label);
+color: var(--tooltip-fore-color);
+background: var(--tooltip-back-color);
+border-radius: var(--universal-border-radius);
+padding: var(--universal-padding);
+white-space: nowrap;
+transform: translateX(-50%); }
+.tooltip:not(.bottom):after {
+margin-bottom: calc(2 * var(--universal-margin)); }
+.tooltip.bottom:after {
+margin-top: calc(2 * var(--universal-margin)); }
+:root {
+--modal-overlay-color: rgba(0, 0, 0, 0.45);
+--modal-close-color: #e6007e;
+--modal-close-hover-color: #ffe97f; }
+[type="checkbox"].modal {
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+position: absolute;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%); }
+[type="checkbox"].modal + div {
+position: fixed;
+top: 0;
+left: 0;
+display: none;
+width: 100vw;
+height: 100vh;
+background: var(--modal-overlay-color); }
+[type="checkbox"].modal + div .card {
+margin: 0 auto;
+max-height: 50vh;
+overflow: auto; }
+[type="checkbox"].modal + div .card .modal-close {
+position: absolute;
+top: 0;
+right: 0;
+width: 1.75rem;
+height: 1.75rem;
+border-radius: var(--universal-border-radius);
+padding: var(--universal-padding);
+margin: 0;
+cursor: pointer;
+transition: background 0.3s; }
+[type="checkbox"].modal + div .card .modal-close:before {
+display: block;
+content: '\00D7';
+color: var(--modal-close-color);
+position: relative;
+font-family: sans-serif;
+font-size: 1.75rem;
+line-height: 1;
+text-align: center; }
+[type="checkbox"].modal + div .card .modal-close:hover, [type="checkbox"].modal + div .card .modal-close:focus {
+background: var(--modal-close-hover-color); }
+[type="checkbox"].modal:checked + div {
+display: flex;
+flex: 0 1 auto;
+z-index: 1200; }
+[type="checkbox"].modal:checked + div .card .modal-close {
+z-index: 1211; }
+:root {
+--collapse-label-back-color: #03234b;
+--collapse-label-fore-color: #ffffff;
+--collapse-label-hover-back-color: #3cb4e6;
+--collapse-selected-label-back-color: #3cb4e6;
+--collapse-border-color: var(--collapse-label-back-color);
+--collapse-selected-border-color: #ceecf8;
+--collapse-content-back-color: #ffffff;
+--collapse-selected-label-border-color: #3cb4e6; }
+.collapse {
+width: calc(100% - 2 * var(--universal-margin));
+opacity: 1;
+display: flex;
+flex-direction: column;
+margin: var(--universal-margin);
+border-radius: var(--universal-border-radius); }
+.collapse > [type="radio"], .collapse > [type="checkbox"] {
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+position: absolute;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%); }
+.collapse > label {
+flex-grow: 1;
+display: inline-block;
+height: 1.25rem;
+cursor: pointer;
+transition: background 0.2s;
+color: var(--collapse-label-fore-color);
+background: var(--collapse-label-back-color);
+border: 0.0714285714rem solid var(--collapse-selected-border-color);
+padding: calc(1.25 * var(--universal-padding)); }
+.collapse > label:hover, .collapse > label:focus {
+background: var(--collapse-label-hover-back-color); }
+.collapse > label + div {
+flex-basis: auto;
+height: 1px;
+width: 1px;
+margin: -1px;
+overflow: hidden;
+position: absolute;
+clip: rect(0 0 0 0);
+-webkit-clip-path: inset(100%);
+clip-path: inset(100%);
+transition: max-height 0.3s;
+max-height: 1px; }
+.collapse > :checked + label {
+background: var(--collapse-selected-label-back-color);
+border-color: var(--collapse-selected-label-border-color); }
+.collapse > :checked + label + div {
+box-sizing: border-box;
+position: relative;
+width: 100%;
+height: auto;
+overflow: auto;
+margin: 0;
+background: var(--collapse-content-back-color);
+border: 0.0714285714rem solid var(--collapse-selected-border-color);
+border-top: 0;
+padding: var(--universal-padding);
+clip: auto;
+-webkit-clip-path: inset(0%);
+clip-path: inset(0%);
+max-height: 100%; }
+.collapse > label:not(:first-of-type) {
+border-top: 0; }
+.collapse > label:first-of-type {
+border-radius: var(--universal-border-radius) var(--universal-border-radius) 0 0; }
+.collapse > label:last-of-type:not(:first-of-type) {
+border-radius: 0 0 var(--universal-border-radius) var(--universal-border-radius); }
+.collapse > label:last-of-type:first-of-type {
+border-radius: var(--universal-border-radius); }
+.collapse > :checked:last-of-type:not(:first-of-type) + label {
+border-radius: 0; }
+.collapse > :checked:last-of-type + label + div {
+border-radius: 0 0 var(--universal-border-radius) var(--universal-border-radius); }
+
+mark.tertiary {
+--mark-back-color: #3cb4e6; }
+mark.tag {
+padding: calc(var(--universal-padding)/2) var(--universal-padding);
+border-radius: 1em; }
+
+
+:root {
+--progress-back-color: #3cb4e6;
+--progress-fore-color: #555; }
+progress {
+display: block;
+vertical-align: baseline;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+height: 0.75rem;
+width: calc(100% - 2 * var(--universal-margin));
+margin: var(--universal-margin);
+border: 0;
+border-radius: calc(2 * var(--universal-border-radius));
+background: var(--progress-back-color);
+color: var(--progress-fore-color); }
+progress::-webkit-progress-value {
+background: var(--progress-fore-color);
+border-top-left-radius: calc(2 * var(--universal-border-radius));
+border-bottom-left-radius: calc(2 * var(--universal-border-radius)); }
+progress::-webkit-progress-bar {
+background: var(--progress-back-color); }
+progress::-moz-progress-bar {
+background: var(--progress-fore-color);
+border-top-left-radius: calc(2 * var(--universal-border-radius));
+border-bottom-left-radius: calc(2 * var(--universal-border-radius)); }
+progress[value="1000"]::-webkit-progress-value {
+border-radius: calc(2 * var(--universal-border-radius)); }
+progress[value="1000"]::-moz-progress-bar {
+border-radius: calc(2 * var(--universal-border-radius)); }
+progress.inline {
+display: inline-block;
+vertical-align: middle;
+width: 60%; }
+:root {
+--spinner-back-color: #ddd;
+--spinner-fore-color: #555; }
+@keyframes spinner-donut-anim {
+0% {
+transform: rotate(0deg); }
+100% {
+transform: rotate(360deg); } }
+.spinner {
+display: inline-block;
+margin: var(--universal-margin);
+border: 0.25rem solid var(--spinner-back-color);
+border-left: 0.25rem solid var(--spinner-fore-color);
+border-radius: 50%;
+width: 1.25rem;
+height: 1.25rem;
+animation: spinner-donut-anim 1.2s linear infinite; }
+
+progress.primary {
+--progress-fore-color: #1976d2; }
+progress.secondary {
+--progress-fore-color: #d32f2f; }
+progress.tertiary {
+--progress-fore-color: #308732; }
+.spinner.primary {
+--spinner-fore-color: #1976d2; }
+.spinner.secondary {
+--spinner-fore-color: #d32f2f; }
+.spinner.tertiary {
+--spinner-fore-color: #308732; }
+
+span[class^='icon-'] {
+display: inline-block;
+height: 1em;
+width: 1em;
+vertical-align: -0.125em;
+background-size: contain;
+margin: 0 calc(var(--universal-margin) / 4); }
+span[class^='icon-'].secondary {
+-webkit-filter: invert(25%);
+filter: invert(25%); }
+span[class^='icon-'].inverse {
+-webkit-filter: invert(100%);
+filter: invert(100%); }
+span.icon-alert {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12' y2='16'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-bookmark {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E"); }
+span.icon-calendar {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-credit {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='1' y='4' width='22' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='1' y1='10' x2='23' y2='10'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-edit {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 14.66V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5.34'%3E%3C/path%3E%3Cpolygon points='18 2 22 6 12 16 8 16 8 12 18 2'%3E%3C/polygon%3E%3C/svg%3E"); }
+span.icon-link {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-help {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3'%3E%3C/path%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='17' x2='12' y2='17'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-home {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E"); }
+span.icon-info {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='16' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='8' x2='12' y2='8'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-lock {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='11' width='18' height='11' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M7 11V7a5 5 0 0 1 10 0v4'%3E%3C/path%3E%3C/svg%3E"); }
+span.icon-mail {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'%3E%3C/path%3E%3Cpolyline points='22,6 12,13 2,6'%3E%3C/polyline%3E%3C/svg%3E"); }
+span.icon-location {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E"); }
+span.icon-phone {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'%3E%3C/path%3E%3C/svg%3E"); }
+span.icon-rss {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 11a9 9 0 0 1 9 9'%3E%3C/path%3E%3Cpath d='M4 4a16 16 0 0 1 16 16'%3E%3C/path%3E%3Ccircle cx='5' cy='19' r='1'%3E%3C/circle%3E%3C/svg%3E"); }
+span.icon-search {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'%3E%3C/circle%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-settings {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='3'%3E%3C/circle%3E%3Cpath d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z'%3E%3C/path%3E%3C/svg%3E"); }
+span.icon-share {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='18' cy='5' r='3'%3E%3C/circle%3E%3Ccircle cx='6' cy='12' r='3'%3E%3C/circle%3E%3Ccircle cx='18' cy='19' r='3'%3E%3C/circle%3E%3Cline x1='8.59' y1='13.51' x2='15.42' y2='17.49'%3E%3C/line%3E%3Cline x1='15.41' y1='6.51' x2='8.59' y2='10.49'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-cart {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='9' cy='21' r='1'%3E%3C/circle%3E%3Ccircle cx='20' cy='21' r='1'%3E%3C/circle%3E%3Cpath d='M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6'%3E%3C/path%3E%3C/svg%3E"); }
+span.icon-upload {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4'%3E%3C/path%3E%3Cpolyline points='17 8 12 3 7 8'%3E%3C/polyline%3E%3Cline x1='12' y1='3' x2='12' y2='15'%3E%3C/line%3E%3C/svg%3E"); }
+span.icon-user {
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2303234b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E"); }
+
+span.icon-st-update {
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48ZyBmaWxsPSIjMDMyMzRiIj48cGF0aCBkPSJNMTcwLjkzNCA2NC41NjlsLS4wNC0uMDU1LTI5LjA0OSA0MC4wMzgtLjA1Ny4wNzloMTQuODY3YTU5LjM2NiA1OS4zNjYgMCAwIDEtMS40ODggMTUuNjE1Yy0xLjE1OCA1LjMxOC0zLjgwNyAxMy40NDgtOS44NDggMjEuOTc3LTIuNzY2IDQuMTE4LTYuMzc1IDcuNzI2LTkuMjA4IDEwLjQwOC0zLjQyNiAyLjg1Ny03LjQ2MSA2LjA5NS0xMiA4LjM3Ni04LjEyMSA0LjU2OC0xNy44ODEgNy4xMzgtMjguMjI1IDcuNDMyLTEwLjkwNy4yNDgtMjAuMjAxLTIuNjEtMjYuMDcyLTUuMDUyLTguMjgzLTMuNDc5LTE0LjExMS03LjgwNy0xNi44NS0xMC4wNzgtMS4yNTQtLjk1Ni0yLjI1LTEuOTA3LTMuMDU3LTIuNjc2YTI4LjY2MiAyOC42NjIgMCAwIDAtMS4xNTctMS4wNjkgMTU4Ljg3NCAxNTguODc0IDAgMCAwLTEuNDc5LTEuMzYybC00LjQzNS0zLjk1NiAzLjU2OSA0LjgxLjE4My4yNDNjLjIuMjYzLjU0OC43MjIgMS4wNDggMS4zODkuMjc2LjMzNC41NzkuNzQ3LjkzIDEuMjI2bC4wMDguMDFjLjY4OS45MzkgMS41NDYgMi4xMDcgMi42NjQgMy4zMjIgMyAzLjUzNiA4LjE3OCA4LjgwMSAxNS44MDggMTMuODAxIDUuOTY5IDMuODY2IDE1LjY3MiA4LjkwMSAyOC4wMDEgMTAuOTM1YTc5LjA1IDc5LjA1IDAgMCAwIDEyLjQ4NS45OThjNy45NyAwIDE1LjY1MS0xLjIyOCAyMi44MjgtMy42NDkgNi4zNjYtMS44NzcgMTIuMTkyLTQuOTgxIDE3LjA1My03Ljc3MSA2LjE2LTMuOTM2IDEwLjgxNy03LjU4NiAxNC42NTQtMTEuNDg4IDguMDg0LTcuODk5IDE0Ljg4NC0xNy45MTMgMTkuMTUtMjguMTk5IDMuMjU5LTcuNTk0IDUuNDU2LTE1LjcyNyA2LjUyOS0yNC4xNzVsLjA1NS0uNDI1LjA4My0uNjQxSDIwMGwtMjkuMDY2LTQwLjA2M3pNNTguMTU5IDk5LjIzMmwtMTIuNjU1LjU2M2MtLjA5Ny0uODgxLS4xNTktMS45ODYtLjIyNy0zLjQ3NGE1OS4xODQgNTkuMTg0IDAgMCAxIDEuNDQ2LTE2LjU2YzEuMTU3LTUuMzE2IDMuODA0LTEzLjQ0NCA5Ljg0OC0yMS45NzcgMi4xNjgtMy4yMjggNS4wMDktNi40NCA5LjIwOC0xMC40MTUgMy40MS0yLjg0OSA3LjQzMi02LjA4IDEyLjAwNS04LjM3NSA4LjExNC00LjU2OCAxNy44Ny03LjEzOCAyOC4yMTMtNy40MzIgMTAuOS0uMjUgMjAuMTk2IDIuNjA3IDI2LjA3MiA1LjA0NSA4LjI1OCAzLjQ3MyAxNC4xMDUgNy44MTIgMTYuODU3IDEwLjA5MSAxLjI1Ny45NTEgMi4yNTMgMS45MDQgMy4wNTcgMi42NzNsLjAxNy4wMTZjLjQzLjQxMS44MDEuNzY2IDEuMTM2IDEuMDUxLjQ3NS40MzguODQxLjc3NyAxLjA5MSAxLjAxbC4xMzguMTI4LjI0OC4yMjkgNC4wNCAzLjYxMy0zLjE2NS00LjQ1NmMtLjA1OC0uMDgzLS4zMTItLjQxNy0uNzMtLjk3MWwtLjUwNy0uNjdhMjguOTIyIDI4LjkyMiAwIDAgMS0uOTAxLTEuMTkybC0uMDItLjAyN2MtLjY5LS45NDUtMS41NDgtMi4xMjEtMi42NzctMy4zNDYtMy4wMDItMy41MzctOC4xODItOC44MDMtMTUuODEzLTEzLjgwMS01Ljk2NC0zLjg2NS0xNS42NjItOC45LTI3Ljk5Ny0xMC45MzUtOC40ODQtMS4zNjMtMjEuNDk2LTIuMDA5LTM1LjMxMyAyLjY1MS02LjM1NSAxLjg4LTEyLjE4NiA0Ljk4My0xNy4wNTQgNy43NzItNi4xNjMgMy45NDQtMTAuODIgNy41OTUtMTQuNjU0IDExLjQ4OC04LjA3OSA3Ljg5NC0xNC44ODIgMTcuOTA5LTE5LjE1NSAyOC4yLTMuMjY4IDcuNjI0LTUuNDYzIDE1Ljc1Ny02LjUyMyAyNC4xNzMtLjQzNiAzLjI4MS0uNjQyIDUuNDIxLS42NjQgNi45MjZMMCAxMDEuODMxbDMwLjY4MyAzOC43MjcuMDQyLjA1MyAyNy4zOC00MS4yOTguMDU0LS4wODF6IiBzdHlsZT0iZmlsbDogI2U2MDA3ZTsiLz48L2c+PC9zdmc+Cg==); }
+span.icon-st-add {
+background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMjAwIj48ZyBmaWxsPSIjMTMyNTRhIj48cGF0aCBkPSJNMTAwIC4yMTJDNDQuODY4LjIxMiAwIDQ0Ljg4OSAwIDk5Ljc4OGMwIDU1LjEzMiA0NC44NjggMTAwIDEwMCAxMDBzMTAwLTQ0Ljg2OCAxMDAtMTAwQzIwMCA0NC44ODkgMTU1LjEzMi4yMTIgMTAwIC4yMTJ6bTAgMTgxLjE2NGMtNDQuOTc0IDAtODEuNTg3LTM2LjYxNC04MS41ODctODEuNTg3IDAtNDQuNzYyIDM2LjYxNC04MS4xNjQgODEuNTg3LTgxLjE2NCA0NC45OTUgMCA4MS41ODcgMzYuNDAyIDgxLjU4NyA4MS4xNjQgMCA0NC45NzMtMzYuNTkyIDgxLjU4Ny04MS41ODcgODEuNTg3eiIgc3R5bGU9ImZpbGw6ICNlNjAwN2U7Ii8+PHBhdGggZD0iTTE0MS4xIDg4LjEyN2gtMjkuNDM5VjU4LjY4OGMwLTYuMzkyLTUuMTg1LTExLjU5OC0xMS41OTgtMTEuNTk4LTYuNDEzIDAtMTEuNjE5IDUuMjA2LTExLjYxOSAxMS41OTh2MjkuNDM5SDU4LjQ3NmMtNi4zOTIgMC0xMS41OTggNS4xODUtMTEuNTk4IDExLjU5OCAwIDYuNDEzIDUuMjA2IDExLjYxOSAxMS41OTggMTEuNjE5aDI5Ljk2OHYyOS45NjhjMCA2LjM5MiA1LjIwNiAxMS41OTggMTEuNjE5IDExLjU5OCA2LjQxMyAwIDExLjU5OC01LjIwNiAxMS41OTgtMTEuNTk4di0yOS45NjhIMTQxLjFjNi4zOTIgMCAxMS41OTgtNS4yMDYgMTEuNTk4LTExLjYxOSAwLTYuNDEzLTUuMjA2LTExLjU5OC0xMS41OTgtMTEuNTk4eiIgc3R5bGU9ImZpbGw6ICNlNjAwN2U7Ii8+PC9nPjwvc3ZnPgo=); }
+
+
+:root {
+--generic-border-color: rgba(0, 0, 0, 0.3);
+--generic-box-shadow: 0 0.2857142857rem 0.2857142857rem 0 rgba(0, 0, 0, 0.125), 0 0.1428571429rem 0.1428571429rem -0.1428571429rem rgba(0, 0, 0, 0.125); }
+.hidden {
+display: none !important; }
+.visually-hidden {
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+margin: -1px !important;
+border: 0 !important;
+padding: 0 !important;
+clip: rect(0 0 0 0) !important;
+-webkit-clip-path: inset(100%) !important;
+clip-path: inset(100%) !important;
+overflow: hidden !important; }
+.bordered {
+border: 0.0714285714rem solid var(--generic-border-color) !important; }
+.rounded {
+border-radius: var(--universal-border-radius) !important; }
+.circular {
+border-radius: 50% !important; }
+.shadowed {
+box-shadow: var(--generic-box-shadow) !important; }
+.responsive-margin {
+margin: calc(var(--universal-margin) / 4) !important; }
+@media screen and (min-width: 500px) {
+.responsive-margin {
+margin: calc(var(--universal-margin) / 2) !important; } }
+@media screen and (min-width: 1280px) {
+.responsive-margin {
+margin: var(--universal-margin) !important; } }
+.responsive-padding {
+padding: calc(var(--universal-padding) / 4) !important; }
+@media screen and (min-width: 500px) {
+.responsive-padding {
+padding: calc(var(--universal-padding) / 2) !important; } }
+@media screen and (min-width: 1280px) {
+.responsive-padding {
+padding: var(--universal-padding) !important; } }
+@media screen and (max-width: 499px) {
+.hidden-sm {
+display: none !important; } }
+@media screen and (min-width: 500px) and (max-width: 1279px) {
+.hidden-md {
+display: none !important; } }
+@media screen and (min-width: 1280px) {
+.hidden-lg {
+display: none !important; } }
+@media screen and (max-width: 499px) {
+.visually-hidden-sm {
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+margin: -1px !important;
+border: 0 !important;
+padding: 0 !important;
+clip: rect(0 0 0 0) !important;
+-webkit-clip-path: inset(100%) !important;
+clip-path: inset(100%) !important;
+overflow: hidden !important; } }
+@media screen and (min-width: 500px) and (max-width: 1279px) {
+.visually-hidden-md {
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+margin: -1px !important;
+border: 0 !important;
+padding: 0 !important;
+clip: rect(0 0 0 0) !important;
+-webkit-clip-path: inset(100%) !important;
+clip-path: inset(100%) !important;
+overflow: hidden !important; } }
+@media screen and (min-width: 1280px) {
+.visually-hidden-lg {
+position: absolute !important;
+width: 1px !important;
+height: 1px !important;
+margin: -1px !important;
+border: 0 !important;
+padding: 0 !important;
+clip: rect(0 0 0 0) !important;
+-webkit-clip-path: inset(100%) !important;
+clip-path: inset(100%) !important;
+overflow: hidden !important; } }
+
+img[alt="ST logo"] { display: block; margin: auto; width: 75%; max-width: 250px; min-width: 71px; }
+img[alt="Cube logo"] { float: right; width: 30%; max-width: 10rem; min-width: 8rem; padding-right: 1rem;}
+.figure {
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}</style>
+  <link href="data:image/png;base64,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" rel="icon" type="image/x-icon" />
+</head>
+<body>
+<style>
+    #table-sla th, #table-sla td {
+        vertical-align: top;
+    }
+</style>
+<div class="row">
+<div class="col-sm-12 col-lg-3">
+<center>
+<h1 id="these-are-full-license-terms-for">These are full license terms for</h1>
+<h1 id="x-linux-qt"><mark>X-LINUX-QT</mark></h1>
+<p>Copyright © 2024 STMicroelectronics</p>
+<p>All rights reserved</p>
+<a href="https://www.st.com" class="logo"><img src="data:image/png;base64,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" alt="ST logo" /></a>
+</center>
+</div>
+<section id="overview" class="col-sm-12 col-lg-9">
+<h2><mark><strong>OVERVIEW</strong></mark></h2>
+<div>
+<p>This Software Bill Of Material (SBOM) lists the software components of this software package, including the copyright owner and license terms for each component.</p>
+<p>The full text of these licenses are below the SBOM.</p>
+<p><strong>SOFTWARE BILL OF MATERIALS</strong></p>
+<div id="table-sla">
+<table>
+<colgroup>
+<col style="width: 38%"></col>
+<col style="width: 30%"></col>
+<col style="width: 30%"></col>
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Component</th>
+<th style="text-align: left;">Copyright</th>
+<th style="text-align: left;">License</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Demonstrations</strong></td>
+<td style="text-align: left;"><strong>STMicroelectronics</strong></td>
+<td style="text-align: left;"><a href="#collapse-sla"><strong>SLA</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    STLauncher</td>
+<td style="text-align: left;">    STMicroelectronics</td>
+<td style="text-align: left;">    <a href="#collapse-sla"><strong>SLA</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    Medical</td>
+<td style="text-align: left;">    STMicroelectronics</td>
+<td style="text-align: left;">    <a href="#collapse-sla"><strong>SLA</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    RobotArm3D</td>
+<td style="text-align: left;">    STMicroelectronics</td>
+<td style="text-align: left;">    <a href="#collapse-sla"><strong>SLA</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Core</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    MD4</td>
+<td style="text-align: left;">    Written by Alexander Peslyak - better known<br>    as Solar Designer <a href="mailto:solar@openwall.com" class="email">solar@openwall.com</a>,<br>    and placed in the public domain. There’s absolutely no warranty.</td>
+<td style="text-align: left;">    Public Domain</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    MD5</td>
+<td style="text-align: left;">    Written by Colin Plumb, no copyright is claimed.<br>    Ian Jackson <a href="mailto:ian@chiark.greenend.org.uk" class="email">ian@chiark.greenend.org.uk</a>.</td>
+<td style="text-align: left;">    Public Domain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    Secure Hash Algorithm SHA-1</td>
+<td style="text-align: left;">    Copyright (C) Dominik Reichl <a href="mailto:dominik.reichl@t-online.de" class="email">dominik.reichl@t-online.de</a><br>    Copyright (C) The Qt Company Ltd</td>
+<td style="text-align: left;">    Public Domain</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    Secure Hash Algorithm SHA-3 - Keccak</td>
+<td style="text-align: left;">    Guido Bertoni, Joan Daemen, Michaël Peeters<br>    and Gilles Van Assche.</td>
+<td style="text-align: left;">    <a href="#collapse-annex-1"><strong>ANNEX 1</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    Unicode Character Database (UCD)</td>
+<td style="text-align: left;">    Copyright (C) Unicode, Inc.</td>
+<td style="text-align: left;">    <a href="#collapse-annex-2"><strong>ANNEX 2</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    Unicode Common Locale Data Repository (CLDR)</td>
+<td style="text-align: left;">    Copyright (C) Unicode, Inc.</td>
+<td style="text-align: left;">    <a href="#collapse-annex-2"><strong>ANNEX 2</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt GUI</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Multimedia</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Multimedia Widgets</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Network</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt QML</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Quick Controls</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick Dialogs</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Quick Layouts</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick Test</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt SQL</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    SQLite</td>
+<td style="text-align: left;">    The authors disclaim copyright to the source code.<br>    However, a license can be obtained if needed.</td>
+<td style="text-align: left;">    Public Domain</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Test</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    Valgrind</td>
+<td style="text-align: left;">    Copyright (C) Julian Seward<br>    Copyright (C) Josef Weidendorfer.</td>
+<td style="text-align: left;">    <a href="#collapse-annex-3"><strong>ANNEX 3</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">    Linux Performance Events</td>
+<td style="text-align: left;">    Copyright (C) Thomas Gleixner <a href="mailto:tglx@linutronix.de" class="email">tglx@linutronix.de</a><br>    Copyright (C) Red Hat, Inc., Ingo Molnar<br>    Copyright (C) Red Hat, Inc., Peter Zijlstra</td>
+<td style="text-align: left;">    <a href="#collapse-annex-4"><strong>ANNEX 4</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Widgets</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt 3D</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Concurrent</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt D-Bus</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Graphical Effects</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Image Formats</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">    TIFF Software Distribution (libtiff)</td>
+<td style="text-align: left;">    Copyright (c) Sam Leffler<br>    Copyright (c) Silicon Graphics, Inc.</td>
+<td style="text-align: left;">    <a href="#collapse-annex-5"><strong>ANNEX 5</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt OpenGL</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Platform Headers</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Positioning</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Print Support</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Quick Controls 1</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick Extras</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Quick Timeline</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick Widgets</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Remote Objects</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/LGPL-3.0" title="GNU Lesser General Public License version 3"><strong>LGPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Charts</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/GPL-3.0" title="GNU General Public License version 3"><strong>GPL-3.0-only</strong></a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Qt Virtual Keyboard</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/GPL-3.0" title="GNU General Public License version 3"><strong>GPL-3.0-only</strong></a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Qt Quick 3D</strong></td>
+<td style="text-align: left;"><strong>The Qt Company</strong></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/GPL-3.0" title="GNU General Public License version 3"><strong>GPL-3.0-only</strong></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Notes:</strong> If the license is an open source license, then you can access the terms at <a href="https://opensource.org/">www.opensource.org</a>. Otherwise, the full license terms are below. If a component is not listed in the SBOM, then the SLA shall apply unless other terms are clearly stated in the package.</p>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-sla" checked aria-hidden="true"> <label for="collapse-sla" aria-hidden="true"><strong>SLA – Software License Agreement</strong></label>
+<div>
+<p>SLA0048 Rev4/March 2018</p>
+<h2 id="software-license-agreement">Software license agreement</h2>
+<h3 id="software-package-license-agreement"><strong>SOFTWARE PACKAGE LICENSE AGREEMENT</strong></h3>
+<p>BY INSTALLING COPYING, DOWNLOADING, ACCESSING OR OTHERWISE USING THIS SOFTWARE PACKAGE OR ANY PART THEREOF (AND THE RELATED DOCUMENTATION) FROM STMICROELECTRONICS INTERNATIONAL N.V, SWISS BRANCH AND/OR ITS AFFILIATED COMPANIES (STMICROELECTRONICS), THE RECIPIENT, ON BEHALF OF HIMSELF OR HERSELF, OR ON BEHALF OF ANY ENTITY BY WHICH SUCH RECIPIENT IS EMPLOYED AND/OR ENGAGED AGREES TO BE BOUND BY THIS SOFTWARE PACKAGE LICENSE AGREEMENT.</p>
+<p>Under STMicroelectronics’ intellectual property rights and subject to applicable licensing terms for any third-party software incorporated in this software package and applicable Open Source Terms (as defined here below), the redistribution, reproduction and use in source and binary forms of the software package or any part thereof, with or without modification, are permitted provided that the following conditions are met:</p>
+<ol type="1">
+<li><p>Redistribution of source code (modified or not) must retain any copyright notice, this list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form, except as embedded into microcontroller or microprocessor device manufactured by or for STMicroelectronics or a software update for such device, must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of STMicroelectronics nor the names of other contributors to this software package may be used to endorse or promote products derived from this software package or part thereof without specific written permission.</p></li>
+<li><p>This software package or any part thereof, including modifications and/or derivative works of this software package, must be used and execute solely and exclusively on or in combination with a microcontroller or a microprocessor devices manufactured by or for STMicroelectronics.</p></li>
+<li><p>No use, reproduction or redistribution of this software package partially or totally may be done in any manner that would subject this software package to any Open Source Terms (as defined below).</p></li>
+<li><p>Some portion of the software package may contain software subject to Open Source Terms (as defined below) applicable for each such portion (“Open Source Software”), as further specified in the software package. Such Open Source Software is supplied under the applicable Open Source Terms and is not subject to the terms and conditions of license hereunder. “Open Source Terms” shall mean any open source license which requires as part of distribution of software that the source code of such software is distributed therewith or otherwise made available, or open source license that substantially complies with the Open Source definition specified at www.opensource.org and any other comparable open source license such as for example GNU General Public License (GPL), Eclipse Public License (EPL), Apache Software License, BSD license and MIT license.</p></li>
+<li><p>This software package may also include third party software as expressly specified in the software package subject to specific license terms from such third parties. Such third party software is supplied under such specific license terms and is not subject to the terms and conditions of license hereunder. By installing copying, downloading, accessing or otherwise using this software package, the recipient agrees to be bound by such license terms with regard to such third party software.</p></li>
+<li><p>STMicroelectronics has no obligation to provide any maintenance, support or updates for the software package.</p></li>
+<li><p>The software package is and will remain the exclusive property of STMicroelectronics and its licensors. The recipient will not take any action that jeopardizes STMicroelectronics and its licensors’ proprietary rights or acquire any rights in the software package, except the limited rights specified hereunder.</p></li>
+<li><p>The recipient shall comply with all applicable laws and regulations affecting the use of the software package or any part thereof including any applicable export control law or regulation.</p></li>
+<li><p>Redistribution and use of this software package partially or any part thereof other than as permitted under this license is void and will automatically terminate your rights under this license.</p></li>
+</ol>
+<p>THIS SOFTWARE PACKAGE IS PROVIDED BY STMICROELECTRONICS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS, IMPLIED OR STATUTORY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT OF THIRD PARTY INTELLECTUAL PROPERTY RIGHTS ARE DISCLAIMED TO THE FULLEST EXTENT PERMITTED BY LAW. IN NO EVENT SHALL STMICROELECTRONICS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+<p>EXCEPT AS EXPRESSLY PERMITTED HEREUNDER AND SUBJECT TO THE APPLICABLE LICENSING TERMS FOR ANY THIRD-PARTY SOFTWARE INCORPORATED IN THE SOFTWARE PACKAGE AND OPEN SOURCE TERMS AS APPLICABLE, NO LICENSE OR OTHER RIGHTS, WHETHER EXPRESS OR IMPLIED, ARE GRANTED UNDER ANY PATENT OR OTHER INTELLECTUAL PROPERTY RIGHTS OF STMICROELECTRONICS OR ANY THIRD PARTY.</p>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-annex-1" checked aria-hidden="true"> <label for="collapse-annex-1" aria-hidden="true"><strong>ANNEX 1: CC0-1.0 Licence terms</strong></label>
+<div>
+<pre><code>CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF
+THIS DOCUMENT DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+INFORMATION ON AN &quot;AS-IS&quot; BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE USE OF THIS
+DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES
+RESULTING FROM THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED HEREUNDER.
+
+Statement of Purpose
+
+The laws of most jurisdictions throughout the world automatically confer exclusive Copyright and
+Related Rights (defined below) upon the creator and subsequent owner(s) (each and all, an &quot;owner&quot;)
+of an original work of authorship and/or a database (each, a &quot;Work&quot;).
+
+Certain owners wish to permanently relinquish those rights to a Work for the purpose of contributing
+to a commons of creative, cultural and scientific works (&quot;Commons&quot;) that the public can reliably and
+without fear of later claims of infringement build upon, modify, incorporate in other works, reuse
+and redistribute as freely as possible in any form whatsoever and for any purposes, including
+without limitation commercial purposes. These owners may contribute to the Commons to promote the
+ideal of a free culture and the further production of creative, cultural and scientific works, or to
+gain reputation or greater distribution for their Work in part through the use and efforts of
+others.
+
+For these and/or other purposes and motivations, and without any expectation of additional
+consideration or compensation, the person associating CC0 with a Work (the &quot;Affirmer&quot;), to the
+extent that he or she is an owner of Copyright and Related Rights in the Work, voluntarily elects to
+apply CC0 to the Work and publicly distribute the Work under its terms, with knowledge of his or her
+Copyright and Related Rights in the Work and the meaning and intended legal effect of CC0 on those
+rights.
+
+1. Copyright and Related Rights. A Work made available under CC0 may be protected by copyright and
+   related or neighboring rights (&quot;Copyright and Related Rights&quot;). Copyright and Related Rights
+   include, but are not limited to, the following:
+
+  i. the right to reproduce, adapt, distribute, perform, display, communicate, and translate a Work;
+
+  ii. moral rights retained by the original author(s) and/or performer(s);
+
+  iii. publicity and privacy rights pertaining to a person&#39;s image or likeness depicted in a Work;
+
+  iv. rights protecting against unfair competition in regards to a Work, subject to the limitations
+      in paragraph 4(a), below;
+
+  v. rights protecting the extraction, dissemination, use and reuse of data in a Work;
+
+  vi. database rights (such as those arising under Directive 96/9/EC of the European Parliament and
+      of the Council of 11 March 1996 on the legal protection of databases, and under any national
+      implementation thereof, including any amended or successor version of such directive); and
+
+  vii. other similar, equivalent or corresponding rights throughout the world based on applicable
+       law or treaty, and any national implementations thereof.
+
+2. Waiver. To the greatest extent permitted by, but not in contravention of, applicable law,
+   Affirmer hereby overtly, fully, permanently, irrevocably and unconditionally waives, abandons,
+   and surrenders all of Affirmer&#39;s Copyright and Related Rights and associated claims and causes of
+   action, whether now known or unknown (including existing as well as future claims and causes of
+   action), in the Work (i) in all territories worldwide, (ii) for the maximum duration provided by
+   applicable law or treaty (including future time extensions), (iii) in any current or future
+   medium and for any number of copies, and (iv) for any purpose whatsoever, including without
+   limitation commercial, advertising or promotional purposes (the &quot;Waiver&quot;). Affirmer makes the
+   Waiver for the benefit of each member of the public at large and to the detriment of Affirmer&#39;s
+   heirs and successors, fully intending that such Waiver shall not be subject to revocation,
+   rescission, cancellation, termination, or any other legal or equitable action to disrupt the
+   quiet enjoyment of the Work by the public as contemplated by Affirmer&#39;s express Statement of
+   Purpose.
+
+3. Public License Fallback. Should any part of the Waiver for any reason be judged legally invalid
+   or ineffective under applicable law, then the Waiver shall be preserved to the maximum extent
+   permitted taking into account Affirmer&#39;s express Statement of Purpose. In addition, to the extent
+   the Waiver is so judged Affirmer hereby grants to each affected person a royalty-free, non
+   transferable, non sublicensable, non exclusive, irrevocable and unconditional license to exercise
+   Affirmer&#39;s Copyright and Related Rights in the Work (i) in all territories worldwide, (ii) for
+   the maximum duration provided by applicable law or treaty (including future time extensions),
+   (iii) in any current or future medium and for any number of copies, and (iv) for any purpose
+   whatsoever, including without limitation commercial, advertising or promotional purposes (the
+   &quot;License&quot;). The License shall be deemed effective as of the date CC0 was applied by Affirmer to
+   the Work. Should any part of the License for any reason be judged legally invalid or ineffective
+   under applicable law, such partial invalidity or ineffectiveness shall not invalidate the
+   remainder of the License, and in such case Affirmer hereby affirms that he or she will not (i)
+   exercise any of his or her remaining Copyright and Related Rights in the Work or (ii) assert any
+   associated claims and causes of action with respect to the Work, in either case contrary to
+   Affirmer&#39;s express Statement of Purpose.
+
+4. Limitations and Disclaimers.
+
+a. No trademark or patent rights held by Affirmer are waived, abandoned, surrendered, licensed or
+   otherwise affected by this document.
+
+b. Affirmer offers the Work as-is and makes no representations or warranties of any kind concerning
+   the Work, express, implied, statutory or otherwise, including without limitation warranties of
+   title, merchantability, fitness for a particular purpose, non infringement, or the absence of
+   latent or other defects, accuracy, or the present or absence of errors, whether or not
+   discoverable, all to the greatest extent permissible under applicable law.
+
+c. Affirmer disclaims responsibility for clearing rights of other persons that may apply to the Work
+   or any use thereof, including without limitation any person&#39;s Copyright and Related Rights in the
+   Work. Further, Affirmer disclaims responsibility for obtaining any necessary consents,
+   permissions or other rights required for any use of the Work.
+
+d. Affirmer understands and acknowledges that Creative Commons is not a party to this document and
+   has no duty or obligation with respect to this CC0 or use of the Work.</code></pre>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-annex-2" checked aria-hidden="true"> <label for="collapse-annex-2" aria-hidden="true"><strong>ANNEX 2: Unicode-DFS-2016 License terms</strong></label>
+<div>
+<pre><code>UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
+
+See Terms of Use for definitions of Unicode Inc.&#39;s
+Data Files and Software.
+
+NOTICE TO USER: Carefully read the following legal agreement.
+BY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING UNICODE INC.&#39;S
+DATA FILES (&quot;DATA FILES&quot;), AND/OR SOFTWARE (&quot;SOFTWARE&quot;),
+YOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE
+TERMS AND CONDITIONS OF THIS AGREEMENT.
+IF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE
+THE DATA FILES OR SOFTWARE.
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright © 1991-2021 Unicode, Inc. All rights reserved.
+Distributed under the Terms of Use in https://www.unicode.org/copyright.html.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Unicode data files and any associated documentation
+(the &quot;Data Files&quot;) or Unicode software and any associated documentation
+(the &quot;Software&quot;) to deal in the Data Files or Software
+without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, and/or sell copies of
+the Data Files or Software, and to permit persons to whom the Data Files
+or Software are furnished to do so, provided that either
+(a) this copyright and permission notice appear with all copies
+of the Data Files or Software, or
+(b) this copyright and permission notice appear in associated
+Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder
+shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in these Data Files or Software without prior
+written authorization of the copyright holder.</code></pre>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-annex-3" checked aria-hidden="true"> <label for="collapse-annex-3" aria-hidden="true"><strong>ANNEX 3: BSD 4-clause “Original” or “Old” License terms</strong></label>
+<div>
+<pre><code>Copyright (C) 2000-2017 Julian Seward.  All rights reserved.
+ Copyright (C) 2003-2017 Josef Weidendorfer.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+ 2. The origin of this software must not be misrepresented; you must
+    not claim that you wrote the original software.  If you use this
+    software in a product, an acknowledgment in the product
+    documentation would be appreciated but is not required.
+
+ 3. Altered source versions must be plainly marked as such, and must
+    not be misrepresented as being the original software.
+
+ 4. The name of the author may not be used to endorse or promote
+    products derived from this software without specific prior written
+    permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS&#39;&#39; AND ANY EXPRESS
+ OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-annex-4" checked aria-hidden="true"> <label for="collapse-annex-4" aria-hidden="true"><strong>ANNEX 4: GNU General Public License v2.0 only with Linux Syscall Note</strong></label>
+<div>
+<pre><code>NOTE! This copyright does *not* cover user programs that use kernel
+ services by normal system calls - this is merely considered normal use
+ of the kernel, and does *not* fall under the heading of &quot;derived work&quot;.
+ Also note that the GPL below is copyrighted by the Free Software
+ Foundation, but the instance of code that it refers to (the linux
+ kernel) is copyrighted by me and others who actually wrote it.
+
+                        Linus Torvalds
+
+----------------------------------------
+
+                    GNU GENERAL PUBLIC LICENSE
+                       Version 2, June 1991
+
+ Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+                          675 Mass Ave, Cambridge, MA 02139, USA
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+                            Preamble
+
+  The licenses for most software are designed to take away your
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee your freedom to share and change free
+software--to make sure the software is free for all its users.  This
+General Public License applies to most of the Free Software
+Foundation&#39;s software and to any other program whose authors commit to
+using it.  (Some other Free Software Foundation software is covered by
+the GNU Library General Public License instead.)  You can apply it to
+your programs, too.
+
+  When we speak of free software, we are referring to freedom, not
+price.  Our General Public Licenses are designed to make sure that you
+have the freedom to distribute copies of free software (and charge for
+this service if you wish), that you receive source code or can get it
+if you want it, that you can change the software or use pieces of it
+in new free programs; and that you know you can do these things.
+
+  To protect your rights, we need to make restrictions that forbid
+anyone to deny you these rights or to ask you to surrender the rights.
+These restrictions translate to certain responsibilities for you if you
+distribute copies of the software, or if you modify it.
+
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee, you must give the recipients all the rights that
+you have.  You must make sure that they, too, receive or can get the
+source code.  And you must show them these terms so they know their
+rights.
+
+  We protect your rights with two steps: (1) copyright the software, and
+(2) offer you this license which gives you legal permission to copy,
+distribute and/or modify the software.
+
+  Also, for each author&#39;s protection and ours, we want to make certain
+that everyone understands that there is no warranty for this free
+software.  If the software is modified by someone else and passed on, we
+want its recipients to know that what they have is not the original, so
+that any problems introduced by others will not reflect on the original
+authors&#39; reputations.
+
+  Finally, any free program is threatened constantly by software
+patents.  We wish to avoid the danger that redistributors of a free
+program will individually obtain patent licenses, in effect making the
+program proprietary.  To prevent this, we have made it clear that any
+patent must be licensed for everyone&#39;s free use or not licensed at all.
+
+  The precise terms and conditions for copying, distribution and
+modification follow.
+
+                    GNU GENERAL PUBLIC LICENSE
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. This License applies to any program or other work which contains
+a notice placed by the copyright holder saying it may be distributed
+under the terms of this General Public License.  The &quot;Program&quot;, below,
+refers to any such program or work, and a &quot;work based on the Program&quot;
+means either the Program or any derivative work under copyright law:
+that is to say, a work containing the Program or a portion of it,
+either verbatim or with modifications and/or translated into another
+language.  (Hereinafter, translation is included without limitation in
+the term &quot;modification&quot;.)  Each licensee is addressed as &quot;you&quot;.
+
+Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running the Program is not restricted, and the output from the Program
+is covered only if its contents constitute a work based on the
+Program (independent of having been made by running the Program).
+Whether that is true depends on what the Program does.
+
+  1. You may copy and distribute verbatim copies of the Program&#39;s
+source code as you receive it, in any medium, provided that you
+conspicuously and appropriately publish on each copy an appropriate
+copyright notice and disclaimer of warranty; keep intact all the
+notices that refer to this License and to the absence of any warranty;
+and give any other recipients of the Program a copy of this License
+along with the Program.
+
+You may charge a fee for the physical act of transferring a copy, and
+you may at your option offer warranty protection in exchange for a fee.
+
+  2. You may modify your copy or copies of the Program or any portion
+of it, thus forming a work based on the Program, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:
+
+    a) You must cause the modified files to carry prominent notices
+    stating that you changed the files and the date of any change.
+
+    b) You must cause any work that you distribute or publish, that in
+    whole or in part contains or is derived from the Program or any
+    part thereof, to be licensed as a whole at no charge to all third
+    parties under the terms of this License.
+
+    c) If the modified program normally reads commands interactively
+    when run, you must cause it, when started running for such
+    interactive use in the most ordinary way, to print or display an
+    announcement including an appropriate copyright notice and a
+    notice that there is no warranty (or else, saying that you provide
+    a warranty) and that users may redistribute the program under
+    these conditions, and telling the user how to view a copy of this
+    License.  (Exception: if the Program itself is interactive but
+    does not normally print such an announcement, your work based on
+    the Program is not required to print an announcement.)
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Program,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Program, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote it.
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Program.
+
+In addition, mere aggregation of another work not based on the Program
+with the Program (or with a work based on the Program) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.
+
+  3. You may copy and distribute the Program (or a work based on it,
+under Section 2) in object code or executable form under the terms of
+Sections 1 and 2 above provided that you also do one of the following:
+
+    a) Accompany it with the complete corresponding machine-readable
+    source code, which must be distributed under the terms of Sections
+    1 and 2 above on a medium customarily used for software interchange; or,
+
+    b) Accompany it with a written offer, valid for at least three
+    years, to give any third party, for a charge no more than your
+    cost of physically performing source distribution, a complete
+    machine-readable copy of the corresponding source code, to be
+    distributed under the terms of Sections 1 and 2 above on a medium
+    customarily used for software interchange; or,
+
+    c) Accompany it with the information you received as to the offer
+    to distribute corresponding source code.  (This alternative is
+    allowed only for noncommercial distribution and only if you
+    received the program in object code or executable form with such
+    an offer, in accord with Subsection b above.)
+
+The source code for a work means the preferred form of the work for
+making modifications to it.  For an executable work, complete source
+code means all the source code for all modules it contains, plus any
+associated interface definition files, plus the scripts used to
+control compilation and installation of the executable.  However, as a
+special exception, the source code distributed need not include
+anything that is normally distributed (in either source or binary
+form) with the major components (compiler, kernel, and so on) of the
+operating system on which the executable runs, unless that component
+itself accompanies the executable.
+
+If distribution of executable or object code is made by offering
+access to copy from a designated place, then offering equivalent
+access to copy the source code from the same place counts as
+distribution of the source code, even though third parties are not
+compelled to copy the source along with the object code.
+
+  4. You may not copy, modify, sublicense, or distribute the Program
+except as expressly provided under this License.  Any attempt
+otherwise to copy, modify, sublicense or distribute the Program is
+void, and will automatically terminate your rights under this License.
+However, parties who have received copies, or rights, from you under
+this License will not have their licenses terminated so long as such
+parties remain in full compliance.
+
+  5. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Program or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Program (or any work based on the
+Program), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Program or works based on it.
+
+  6. Each time you redistribute the Program (or any work based on the
+Program), the recipient automatically receives a license from the
+original licensor to copy, distribute or modify the Program subject to
+these terms and conditions.  You may not impose any further
+restrictions on the recipients&#39; exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties to
+this License.
+
+  7. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Program at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Program by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Program.
+
+If any portion of this section is held invalid or unenforceable under
+any particular circumstance, the balance of the section is intended to
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system, which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.
+
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Program under this License
+may add an explicit geographical distribution limitation excluding
+those countries, so that distribution is permitted only in or among
+countries not thus excluded.  In such case, this License incorporates
+the limitation as if written in the body of this License.
+
+  9. The Free Software Foundation may publish revised and/or new versions
+of the General Public License from time to time.  Such new versions will
+be similar in spirit to the present version, but may differ in detail to
+address new problems or concerns.
+
+Each version is given a distinguishing version number.  If the Program
+specifies a version number of this License which applies to it and &quot;any
+later version&quot;, you have the option of following the terms and conditions
+either of that version or of any later version published by the Free
+Software Foundation.  If the Program does not specify a version number of
+this License, you may choose any version ever published by the Free Software
+Foundation.
+
+  10. If you wish to incorporate parts of the Program into other free
+programs whose distribution conditions are different, write to the author
+to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the Free Software Foundation; we sometimes
+make exceptions for this.  Our decision will be guided by the two goals
+of preserving the free status of all derivatives of our free software and
+of promoting the sharing and reuse of software generally.
+
+                            NO WARRANTY
+
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+PROVIDE THE PROGRAM &quot;AS IS&quot; WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+REPAIR OR CORRECTION.
+
+  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGES.
+
+                     END OF TERMS AND CONDITIONS
+
+        Appendix: How to Apply These Terms to Your New Programs
+
+  If you develop a new program, and you want it to be of the greatest
+possible use to the public, the best way to achieve this is to make it
+free software which everyone can redistribute and change under these terms.
+
+  To do so, attach the following notices to the program.  It is safest
+to attach them to the start of each source file to most effectively
+convey the exclusion of warranty; and each file should have at least
+the &quot;copyright&quot; line and a pointer to where the full notice is found.
+
+    &lt;one line to give the program&#39;s name and a brief idea of what it does.&gt;
+    Copyright (C) 19yy  &lt;name of author&gt;
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+
+Also add information on how to contact you by electronic and paper mail.
+
+If the program is interactive, make it output a short notice like this
+when it starts in an interactive mode:
+
+    Gnomovision version 69, Copyright (C) 19yy name of author
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w&#39;.
+    This is free software, and you are welcome to redistribute it
+    under certain conditions; type `show c&#39; for details.
+
+The hypothetical commands `show w&#39; and `show c&#39; should show the appropriate
+parts of the General Public License.  Of course, the commands you use may
+be called something other than `show w&#39; and `show c&#39;; they could even be
+mouse-clicks or menu items--whatever suits your program.
+
+You should also get your employer (if you work as a programmer) or your
+school, if any, to sign a &quot;copyright disclaimer&quot; for the program, if
+necessary.  Here is a sample; alter the names:
+
+  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+  `Gnomovision&#39; (which makes passes at compilers) written by James Hacker.
+
+  &lt;signature of Ty Coon&gt;, 1 April 1989
+  Ty Coon, President of Vice
+
+This General Public License does not permit incorporating your program into
+proprietary programs.  If your program is a subroutine library, you may
+consider it more useful to permit linking proprietary applications with the
+library.  If this is what you want to do, use the GNU Library General
+Public License instead of this License.</code></pre>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-annex-5" checked aria-hidden="true"> <label for="collapse-annex-5" aria-hidden="true"><strong>ANNEX 5: libtiff License terms</strong></label>
+<div>
+<pre><code>Copyright (c) 1988-1997 Sam Leffler
+Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+Permission to use, copy, modify, distribute, and sell this software and
+its documentation for any purpose is hereby granted without fee, provided
+that (i) the above copyright notices and this permission notice appear in
+all copies of the software and related documentation, and (ii) the names of
+Sam Leffler and Silicon Graphics may not be used in any advertising or
+publicity relating to the software without the specific, prior written
+permission of Sam Leffler and Silicon Graphics.
+
+THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND,
+EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY
+WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
+
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
+ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
+OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF
+LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE
+OF THIS SOFTWARE.</code></pre>
+</div>
+</div>
+</section>
+</div>
+</body>
+</html>

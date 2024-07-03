@@ -1,0 +1,64 @@
+From cc3baabc4fdfbfcedce42232c9e347112839a759 Mon Sep 17 00:00:00 2001
+From: Giuseppe D'Angelo <giuseppe.dangelo@kdab.com>
+Date: Tue, 13 Jul 2021 16:16:21 +0200
+Subject: [PATCH] Add environment variables to disable color/depth/stencil
+ clears
+
+When using OpenGL it's already possible to use Qt Quick without
+using depth/stencil, by setting the env variables QSG_NO_DEPTH_BUFFER
+and/or QSG_NO_STENCIL_BUFFER. However setting those still doesn't
+prevent the buffers from being cleared by QQuickWindow at the
+beginning of a frame. Add a way to disable that (you may do
+have a depth buffer, but not want to use it because it's slow
+to use, so you shouldn't clear it).
+
+Of course, disabling the clearing of the depth buffer should
+only be done if QSG_NO_DEPTH_BUFFER is _also_ set.
+
+In a similar way, add a way to disable clearing of the color buffer.
+This is also already possible via APIs (QQuickWindow has a
+clearBeforeRendering setter), but these APIs are not exposed
+to Qt Quick, with the result that any QQuickWindow created in QML
+will perform color clears.
+
+In summary:
+
+* If  QSG_NO_CLEAR_COLOR_BUFFER is set, QQuickWindow will not clear
+  its color buffer
+
+* If QSG_NO_CLEAR_BUFFERS is set, QQuickWindow will not clear any
+  buffer (color, depth, stencil).
+
+Change-Id: I66d2e8183a97f58481d1f74b257a724074159011
+---
+ src/quick/items/qquickwindow.cpp | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+
+diff --git a/src/quick/items/qquickwindow.cpp b/src/quick/items/qquickwindow.cpp
+index f07136fcd3..10af4493d6 100644
+--- a/src/quick/items/qquickwindow.cpp
++++ b/src/quick/items/qquickwindow.cpp
+@@ -451,9 +451,17 @@ void QQuickWindowPrivate::syncSceneGraph()
+ 
+     // Copy the current state of clearing from window into renderer.
+     renderer->setClearColor(clearColor);
+-    QSGAbstractRenderer::ClearMode mode = QSGAbstractRenderer::ClearStencilBuffer | QSGAbstractRenderer::ClearDepthBuffer;
+-    if (clearBeforeRendering)
+-        mode |= QSGAbstractRenderer::ClearColorBuffer;
++
++    QSGAbstractRenderer::ClearMode mode;
++
++    static const bool doClearBuffers = qEnvironmentVariableIsEmpty("QSG_NO_CLEAR_BUFFERS");
++    if (doClearBuffers) {
++        mode = QSGAbstractRenderer::ClearStencilBuffer | QSGAbstractRenderer::ClearDepthBuffer;
++
++        static const bool doClearColor = qEnvironmentVariableIsEmpty("QSG_NO_CLEAR_COLOR_BUFFER");
++        if (doClearColor && clearBeforeRendering)
++            mode |= QSGAbstractRenderer::ClearColorBuffer;
++    }
+     renderer->setClearMode(mode);
+ 
+     renderer->setCustomRenderMode(customRenderMode);
+-- 
+2.25.1
+
