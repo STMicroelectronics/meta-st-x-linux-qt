@@ -16,10 +16,10 @@ inherit allarch
 
 do_install() {
     install -d ${D}/${sysconfdir}/profile.d
-    install -d ${D}${datadir}/qt5
+    install -d ${D}${datadir}/qt6
 
     install -m 0755 ${WORKDIR}/qt-eglfs.sh ${D}/${sysconfdir}/profile.d/
-    install -m 0664 ${WORKDIR}/cursor.json ${D}${datadir}/qt5/
+    install -m 0664 ${WORKDIR}/cursor.json ${D}${datadir}/qt6/
 }
 RDEPENDS:${PN} = "qtbase"
-FILES:${PN} += "${datadir}/qt5"
+FILES:${PN} += "${datadir}/qt6"

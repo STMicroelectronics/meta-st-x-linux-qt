@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0e
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PV = "1.0.0"
+PV = "2.0.0"
 
 inherit packagegroup features_check
 
@@ -58,10 +58,12 @@ RDEPENDS:packagegroup-x-linux-qt-core = "\
 SUMMARY:packagegroup-x-linux-qt-base = "X-LINUX-QT Base components"
 RDEPENDS:packagegroup-x-linux-qt-base = "\
     qtbase                          \
-    qtbase-doc                      \
-    liberation-fonts                \
     qtbase-plugins                  \
     qtbase-tools                    \
+    qt5compat                       \
+    qt5compat-plugins               \
+    qt5compat-qmlplugins            \
+    liberation-fonts                \
     \
     ${@bb.utils.contains("DISTRO_FEATURES", "wayland", "qtwayland", "", d)} \
     ${@bb.utils.contains("DISTRO_FEATURES", "wayland", "qtwayland-plugins", "", d)} \
@@ -70,8 +72,6 @@ RDEPENDS:packagegroup-x-linux-qt-base = "\
     qtdeclarative                   \
     qtdeclarative-qmlplugins        \
     qtdeclarative-tools             \
-    \
-    qtgraphicaleffects-qmlplugins   \
     \
     qtmultimedia                    \
     qtmultimedia-plugins            \
@@ -95,11 +95,6 @@ RDEPENDS:packagegroup-x-linux-qt-extra = "\
     qtwebsockets-plugins        \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtwebsockets-qmlplugins', '', d)} \
     \
-    qtquickcontrols             \
-    qtquickcontrols-qmlplugins  \
-    qtquickcontrols2            \
-    qtquickcontrols2-qmlplugins \
-    \
     qtsensors                   \
     qtsensors-plugins           \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtsensors-qmlplugins', '', d)} \
@@ -115,15 +110,13 @@ RDEPENDS:packagegroup-x-linux-qt-extra = "\
     qtimageformats-plugins      \
     qtimageformats-qmlplugins   \
     \
-    qtxmlpatterns               \
-    qtxmlpatterns-plugins       \
-    qtxmlpatterns-qmlplugins    \
-    \
     qtquicktimeline             \
     qtquicktimeline-plugins     \
     qtquicktimeline-qmlplugins  \
     \
     qtvirtualkeyboard           \
+    qtvirtualkeyboard-plugins   \
+    qtvirtualkeyboard-qmlplugins \
     \
     qtremoteobjects             \
     qtremoteobjects-plugins     \

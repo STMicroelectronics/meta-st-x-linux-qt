@@ -12,16 +12,16 @@ DEMO_APP_NAME := "medical"
 DIST_QT_PLATFORM = "wayland"
 
 # Using source from Git (Codex) repository
-SRC_URI = "git://github.com/STMicroelectronics/st-demo-medical.git;protocol=https;branch=qt5 \
+SRC_URI = "git://github.com/STMicroelectronics/st-demo-medical.git;protocol=https;branch=qt6 \
            file://${DEMO_APP_NAME}.desktop \
            file://Icon_demo_${DEMO_APP_NAME}.svg \
            file://launch_${DEMO_APP_NAME}.sh \
 "
-SRCREV = "4ce80040636026461b2920dd7aeb0bf0d686153f"
+SRCREV = "7d8e1b65beb2a65e57867fdf363061526e099688"
 
-PV = "1.0"
+PV = "2.0"
 
-inherit qmake5 systemd
+inherit qt6-qmake systemd
 
 DEPENDS = "qtbase qtcharts qtdeclarative qtquicktimeline qtsvg"
 
@@ -51,6 +51,7 @@ do_install() {
 
 RDEPENDS:${PN} = "\
     qtbase \
+    qt5compat \
     qtcharts \
     qtdeclarative \
     qtsvg \

@@ -1,9 +1,9 @@
 #!/bin/sh -
 
 export QT_QPA_PLATFORM=eglfs
-if [ -e /usr/share/qt5/cursor.json ];
+if [ -e /usr/share/qt6/cursor.json ];
 then
-	export QT_QPA_EGLFS_KMS_CONFIG=/usr/share/qt5/cursor.json
+	export QT_QPA_EGLFS_KMS_CONFIG=/usr/share/qt6/cursor.json
 fi
 # force to keep the MODE SETTING set
 export QT_QPA_EGLFS_ALWAYS_SET_MODE=1

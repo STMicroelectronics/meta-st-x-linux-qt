@@ -16,7 +16,7 @@ SRC_URI = "file://${EXAMPLE_APP_NAME}.desktop \
 # =========================================================================
 DIST_QT_PLATFORM = "wayland"
 
-PV = "1.0"
+PV = "2.0"
 
 inherit systemd
 

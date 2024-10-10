@@ -11,3 +11,6 @@ export QT_VIRTUALKEYBOARD_DESKTOP_DISABLE=0
 if [[ -f "/usr/lib/libvulkan.so.1" ]] ; then
   export QT_VULKAN_LIB=/usr/lib/libvulkan.so.1
 fi
+
+# Use ffmpeg for Qt Media backend
+export QT_MEDIA_BACKEND="ffmpeg"

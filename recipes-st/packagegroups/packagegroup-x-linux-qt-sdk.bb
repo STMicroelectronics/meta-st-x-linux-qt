@@ -1,11 +1,11 @@
-DESCRIPTION = "X-LINUX-QT embedded Qt5 SDK toolchain"
+DESCRIPTION = "X-LINUX-QT embedded Qt6 SDK toolchain"
 LICENSE = "MIT & Apache-2.0 & BSD-3-Clause"
 
 LIC_FILES_CHKSUM  = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0ec5312d6919e203a55f9"
 
-inherit packagegroup populate_sdk populate_sdk_qt5
+inherit packagegroup populate_sdk populate_sdk_qt6
 inherit native nativesdk
 
 MACHINE_EXTRA_INSTALL_SDK_HOST ?= ""
@@ -21,6 +21,8 @@ RDEPENDS:nativesdk-packagegroup-x-linux-qt-embedded-toolchain-host = "\
     nativesdk-gperf \
     nativesdk-cmake \
     nativesdk-make \
+    nativesdk-ninja \
+    nativesdk-perl-modules \
     ${MACHINE_EXTRA_INSTALL_SDK_HOST} \
     ${@bb.utils.contains("DISTRO_FEATURES", "wayland", "nativesdk-wayland-dev", "", d)} \
     "
@@ -30,10 +32,12 @@ RDEPENDS:nativesdk-packagegroup-x-linux-qt-sdk = "\
     nativesdk-packagegroup-x-linux-qt-embedded-toolchain-host \
     nativesdk-qt3d-tools \
     nativesdk-qtbase \
-    nativesdk-qtbase-dev \
     nativesdk-qtbase-staticdev \
+    nativesdk-qtbase-tools \
+    nativesdk-qtdeclarative \
     nativesdk-qtdeclarative-staticdev \
     nativesdk-qtdeclarative-tools \
+    nativesdk-qtquick3d-tools \
     nativesdk-qtremoteobjects-tools \
     nativesdk-qtscxml-tools \
     nativesdk-qttools-tools \

@@ -19,4 +19,4 @@ do_install() {
     install -m 0755 ${WORKDIR}/qt-wayland.sh ${D}/${sysconfdir}/profile.d/
 }
 RDEPENDS:${PN} = "qtwayland"
-FILES:${PN} += "${datadir}/qt5"
+FILES:${PN} += "${datadir}/qt6"

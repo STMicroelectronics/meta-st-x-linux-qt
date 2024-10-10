@@ -23,13 +23,13 @@ lang: en
 | &nbsp;&nbsp;&nbsp;&nbsp;Secure Hash Algorithm SHA-3 - Keccak | &nbsp;&nbsp;&nbsp;&nbsp;Guido Bertoni, Joan Daemen, Michaël Peeters<br>&nbsp;&nbsp;&nbsp;&nbsp;and Gilles Van Assche. | &nbsp;&nbsp;&nbsp;&nbsp;[__ANNEX 1__](#annex-1-cc0-1.0-licence-terms) |
 | &nbsp;&nbsp;&nbsp;&nbsp;Unicode Character Database (UCD) | &nbsp;&nbsp;&nbsp;&nbsp;Copyright (C) Unicode, Inc. | &nbsp;&nbsp;&nbsp;&nbsp;[__ANNEX 2__](#annex-2-unicode-dfs-2016-license-terms) |
 | &nbsp;&nbsp;&nbsp;&nbsp;Unicode Common Locale Data Repository (CLDR) | &nbsp;&nbsp;&nbsp;&nbsp;Copyright (C) Unicode, Inc. | &nbsp;&nbsp;&nbsp;&nbsp;[__ANNEX 2__](#annex-2-unicode-dfs-2016-license-terms) |
+| __Qt 5 Core Compatibility APIs__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt GUI__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Multimedia__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Multimedia Widgets__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Network__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt QML__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
-| __Qt Quick Controls__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Dialogs__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Layouts__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Test__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
@@ -42,14 +42,12 @@ lang: en
 | __Qt 3D__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Concurrent__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt D-Bus__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
-| __Qt Graphical Effects__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Image Formats__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | &nbsp;&nbsp;&nbsp;&nbsp;TIFF Software Distribution (libtiff) | &nbsp;&nbsp;&nbsp;&nbsp;Copyright (c) Sam Leffler<br>&nbsp;&nbsp;&nbsp;&nbsp;Copyright (c) Silicon Graphics, Inc. | &nbsp;&nbsp;&nbsp;&nbsp;[__ANNEX 5__](#annex-5-libtiff-license-terms) |
 | __Qt OpenGL__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Platform Headers__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Positioning__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Print Support__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
-| __Qt Quick Controls 1__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Extras__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Timeline__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 | __Qt Quick Widgets__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |

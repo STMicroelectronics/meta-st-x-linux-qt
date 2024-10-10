@@ -63,7 +63,7 @@ BBLAYERS += " \
     ${@'${OPENEMBEDDED}' if os.path.isfile('${OEROOT}/layers/openembedded-core/meta/conf/layer.conf') else '${POKY}'} \
     "
 # BSP dependencies"
-BBLAYERS =+ "##OEROOT##/../meta-qt5"
+BBLAYERS =+ "##OEROOT##/../meta-qt6"
 BBLAYERS =+ "##OEROOT##/../meta-st/meta-st-x-linux-qt"
 BBLAYERS =+ "##OEROOT##/../meta-openembedded/meta-oe"
 BBLAYERS =+ "##OEROOT##/../meta-openembedded/meta-python"

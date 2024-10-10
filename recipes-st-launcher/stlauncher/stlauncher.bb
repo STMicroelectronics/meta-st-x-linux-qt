@@ -10,7 +10,7 @@ COMPATIBLE_MACHINE = "(stm32mpcommon)"
 DIST_QT_PLATFORM = "wayland"
 
 # Using source from Git (Codex) repository
-SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;branch=qt5 \
+SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;branch=qt6 \
            file://qt-app.svg \
            file://qt-defaults \
            file://platformdata-mp15xx.html \
@@ -18,19 +18,19 @@ SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;br
            file://start_up_stlauncher.sh \
            file://qt_profile.sh \
 "
-SRCREV = "512cfb358463f489bdec0ce7da530d54a9e71d5a"
+SRCREV = "3562b2a1e3f28173238ad6c874b66d67aa4615ec"
 
-PV = "1.0"
+PV = "2.0"
 
 RRECOMMENDS:${PN} = " \
     packagegroup-st-demo \
     "
 
-inherit qmake5 systemd
+inherit qt6-qmake systemd
 
 ST_LAUNCHER_FULL_PATH := "${prefix}/share/qt/${P}/stlauncher"
 
-DEPENDS = "qtbase qtcharts qtdeclarative qtgraphicaleffects qtquickcontrols2 qtxmlpatterns qtquicktimeline"
+DEPENDS = "qtbase qtcharts qtdeclarative qtquicktimeline"
 
 S = "${WORKDIR}/git"
 
@@ -78,14 +78,11 @@ do_install() {
 }
 
 RDEPENDS:${PN} = "\
+    qt5compat \
     qtcharts \
-    qtquickcontrols2-qmlplugins \
-    qtxmlpatterns \
-    qtxmlpatterns-qmlplugins \
     qtquicktimeline \
     qtquicktimeline-qmlplugins \
     qtdeclarative-qmlplugins \
-    qtquickcontrols-qmlplugins \
     qtvirtualkeyboard \
     qtvirtualkeyboard-plugins \
     qtvirtualkeyboard-qmlplugins \

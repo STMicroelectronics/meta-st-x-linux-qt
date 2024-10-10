@@ -1,6 +1,6 @@
 require recipes-st/images/st-image-weston.bb
 
-inherit populate_sdk_qt5 features_check
+inherit populate_sdk_qt6 features_check
 
 # need to have wayland feature
 REQUIRED_DISTRO_FEATURES = "wayland"
