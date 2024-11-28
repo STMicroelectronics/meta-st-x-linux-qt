@@ -1,4 +1,4 @@
-From 6a60e7f419426f532c6abfae4e360e31a10b28a2 Mon Sep 17 00:00:00 2001
+From 5e91bc30d3e9bf103902132860d6c28f1fa207fe Mon Sep 17 00:00:00 2001
 From: Akram BEN BELGACEM <akram.ben-belgacem@st.com>
 Date: Wed, 7 Feb 2024 12:00:24 +0100
 Subject: [PATCH] QWaylandShmBackingStore: Preserve buffer contents between
@@ -18,7 +18,7 @@ Reviewed-by: David Edmundson <davidedmundson@kde.org>
  2 files changed, 49 insertions(+), 3 deletions(-)
 
 diff --git a/src/client/qwaylandshmbackingstore.cpp b/src/client/qwaylandshmbackingstore.cpp
-index d38d8f04..9610938b 100644
+index a58ab516..723b264d 100644
 --- a/src/client/qwaylandshmbackingstore.cpp
 +++ b/src/client/qwaylandshmbackingstore.cpp
 @@ -47,6 +47,7 @@ namespace QtWaylandClient {
@@ -29,7 +29,7 @@ index d38d8f04..9610938b 100644
  {
      int stride = size.width() * 4;
      int alloc = stride * size.height();
-@@ -155,6 +156,16 @@ QPaintDevice *QWaylandShmBackingStore::paintDevice()
+@@ -166,11 +167,24 @@ QPaintDevice *QWaylandShmBackingStore::paintDevice()
      return contentSurface();
  }
  
@@ -46,9 +46,7 @@ index d38d8f04..9610938b 100644
  void QWaylandShmBackingStore::beginPaint(const QRegion &region)
  {
      mPainting = true;
-@@ -162,6 +173,9 @@ void QWaylandShmBackingStore::beginPaint(const QRegion &region)
- 
-     waylandWindow()->setCanResize(false);
+     ensureSize();
  
 +    const QMargins margins = windowDecorationMargins();
 +    updateDirtyStates(region.translated(margins.left(), margins.top()));
@@ -56,7 +54,7 @@ index d38d8f04..9610938b 100644
      if (mBackBuffer->image()->hasAlphaChannel()) {
          QPainter p(paintDevice());
          p.setCompositionMode(QPainter::CompositionMode_Source);
-@@ -255,7 +269,7 @@ void QWaylandShmBackingStore::resize(const QSize &size)
+@@ -262,7 +276,7 @@ void QWaylandShmBackingStore::resize(const QSize &size)
      QSize sizeWithMargins = (size + QSize(margins.left()+margins.right(),margins.top()+margins.bottom())) * scale;
  
      // We look for a free buffer to draw into. If the buffer is not the last buffer we used,
@@ -65,7 +63,7 @@ index d38d8f04..9610938b 100644
      // buffer so that QPainter is happy to find the stuff it had drawn before. If the new
      // buffer has a different size it needs to be redrawn completely anyway, and if the buffer
      // is the same the stuff is there already.
-@@ -274,8 +288,27 @@ void QWaylandShmBackingStore::resize(const QSize &size)
+@@ -281,8 +295,27 @@ void QWaylandShmBackingStore::resize(const QSize &size)
      qsizetype newSizeInBytes = buffer->image()->sizeInBytes();
  
      // mBackBuffer may have been deleted here but if so it means its size was different so we wouldn't copy it anyway
@@ -95,7 +93,7 @@ index d38d8f04..9610938b 100644
  
      mBackBuffer = buffer;
  
-@@ -288,6 +321,8 @@ void QWaylandShmBackingStore::resize(const QSize &size)
+@@ -295,6 +328,8 @@ void QWaylandShmBackingStore::resize(const QSize &size)
  
      if (windowDecoration() && window()->isVisible() && oldSizeInBytes != newSizeInBytes)
          windowDecoration()->update();
@@ -104,7 +102,7 @@ index d38d8f04..9610938b 100644
  }
  
  QImage *QWaylandShmBackingStore::entireSurface() const
-@@ -312,6 +347,7 @@ void QWaylandShmBackingStore::updateDecorations()
+@@ -319,6 +354,7 @@ void QWaylandShmBackingStore::updateDecorations()
      QTransform sourceMatrix;
      sourceMatrix.scale(dp, dp);
      QRect target; // needs to be in device independent pixels
@@ -112,7 +110,7 @@ index d38d8f04..9610938b 100644
  
      //Top
      target.setX(0);
-@@ -319,16 +355,19 @@ void QWaylandShmBackingStore::updateDecorations()
+@@ -326,16 +362,19 @@ void QWaylandShmBackingStore::updateDecorations()
      target.setWidth(dpWidth);
      target.setHeight(windowDecorationMargins().top());
      decorationPainter.drawImage(target, sourceImage, sourceMatrix.mapRect(target));
@@ -132,7 +130,7 @@ index d38d8f04..9610938b 100644
  
      //Bottom
      target.setX(0);
-@@ -336,6 +375,9 @@ void QWaylandShmBackingStore::updateDecorations()
+@@ -343,6 +382,9 @@ void QWaylandShmBackingStore::updateDecorations()
      target.setWidth(dpWidth);
      target.setHeight(windowDecorationMargins().bottom());
      decorationPainter.drawImage(target, sourceImage, sourceMatrix.mapRect(target));

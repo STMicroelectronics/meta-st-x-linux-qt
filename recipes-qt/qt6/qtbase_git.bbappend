@@ -2,7 +2,6 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
 
 SRC_URI += "\
     file://0001-examples-opengl-cube-set-maximized-window.patch \
-    file://0002-QtBuildInternalsConfig-allow-installing-example-sour.patch \
 "
 
 # Add examples

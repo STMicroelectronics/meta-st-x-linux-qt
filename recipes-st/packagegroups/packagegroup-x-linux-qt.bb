@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0e
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PV = "2.0.1"
+PV = "2.1.0"
 
 inherit packagegroup features_check
 
@@ -24,7 +24,7 @@ PACKAGES = "\
     packagegroup-x-linux-qt-core   \
     packagegroup-x-linux-qt-base   \
     packagegroup-x-linux-qt-extra  \
-    packagegroup-x-linux-qt-demos   \
+    packagegroup-x-linux-qt-demos  \
     packagegroup-x-linux-qt-examples \
     ${ST_APPS}                     \
     "
@@ -34,7 +34,7 @@ RDEPENDS:packagegroup-x-linux-qt = "\
     packagegroup-x-linux-qt-core   \
     packagegroup-x-linux-qt-base   \
     packagegroup-x-linux-qt-extra  \
-    packagegroup-x-linux-qt-demos   \
+    packagegroup-x-linux-qt-demos  \
     packagegroup-x-linux-qt-examples \
     ${ST_APPS}                     \
     "
@@ -83,6 +83,8 @@ RDEPENDS:packagegroup-x-linux-qt-base = "\
     qtmultimedia-qmlplugins         \
     \
     qttools                         \
+    \
+    qtgraphs                        \
     "
 
 SUMMARY:packagegroup-x-linux-qt-extra = "X-LINUX-QT Extra components"
