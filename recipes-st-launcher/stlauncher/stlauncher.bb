@@ -4,19 +4,12 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/MIT;md5=0835ad
 
 COMPATIBLE_MACHINE = "(stm32mpcommon)"
 
-# =========================================================================
-# Wayland/Weston QT Backend for STM32 MP1 & MP2 Devices
-# =========================================================================
-DIST_QT_PLATFORM = "wayland"
-
 # Using source from Github repository
 SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;branch=qt6 \
-           file://qt-app.svg \
-           file://qt-defaults \
-           file://platformdata-mp15xx.html \
-           file://platformdata-mp25xx.html \
-           file://start_up_stlauncher.sh \
-           file://qt_profile.sh \
+    file://qt-app.svg \
+    file://platformdata-mp15xx.html \
+    file://platformdata-mp25xx.html \
+    file://start_up_stlauncher.sh \
 "
 SRCREV = "3562b2a1e3f28173238ad6c874b66d67aa4615ec"
 
@@ -56,24 +49,15 @@ do_install() {
     install -d ${D}${datadir}/pixmaps
     install -m 0644 ${WORKDIR}/qt-app.svg ${D}${datadir}/pixmaps
 
-    install -m 0755 -d ${D}${sysconfdir}/default
-    install -m 0755 ${WORKDIR}/qt-defaults ${D}${sysconfdir}/default/qt
-
-    install -d ${D}${sysconfdir}/profile.d
-    install -m 0755 ${WORKDIR}/qt_profile.sh ${D}${sysconfdir}/profile.d/
-
-    # Set 'QT_QPA_PLATFORM' in /etc/default/qt file
-    echo "QT_QPA_PLATFORM=${DIST_QT_PLATFORM}" >> ${D}${sysconfdir}/default/qt
-
     # update the start_up_stlauncher.sh script
     sed -i -e 's,@stlauncher@,${P},g' ${WORKDIR}/start_up_stlauncher.sh
-    sed -i -e 's,@platform@,${DIST_QT_PLATFORM},g' ${WORKDIR}/start_up_stlauncher.sh
 
     # Install the startup script
     install -d ${D}${prefix}/local/weston-start-at-startup
     install -m 0755 ${WORKDIR}/start_up_stlauncher.sh ${D}${prefix}/share/qt/${P}
 
     # Set STLauncher as default demo-launcher
+    install -m 0755 -d ${D}${sysconfdir}/default
     echo "DEFAULT_DEMO_APPLICATION=${prefix}/share/qt/${P}/start_up_stlauncher.sh" >  ${D}${sysconfdir}/default/demo-launcher
 }
 
@@ -88,7 +72,7 @@ RDEPENDS:${PN} = "\
     qtvirtualkeyboard-qmlplugins \
 "
 
-FILES:${PN} += "${sysconfdir}/etc/profile.d ${datadir}/pixmaps ${prefix}/share/qt/${P} ${sysconfdir}/default/ ${prefix}/local ${prefix}/share/config"
+FILES:${PN} += "${sysconfdir}/default ${sysconfdir}/etc/profile.d ${datadir}/pixmaps ${prefix}/share/qt/${P} ${prefix}/local ${prefix}/share/config"
 
 #inherit useradd
 USERADD_PARAM:${PN} = "--home /home/weston --shell /bin/sh --user-group -G video,input,tty,audio,weston-launch,dialout weston"
