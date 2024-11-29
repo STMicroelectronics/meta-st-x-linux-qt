@@ -55,6 +55,7 @@ lang: en
 | __Qt Charts__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
 | __Qt Virtual Keyboard__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
 | __Qt Quick 3D__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
+| __Qt Quick Designer Components__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
 
 [GPL-3.0]: <https://opensource.org/licenses/GPL-3.0> "GNU General Public License version 3"
 [LGPL-3.0]: <https://opensource.org/licenses/LGPL-3.0> "GNU Lesser General Public License version 3"

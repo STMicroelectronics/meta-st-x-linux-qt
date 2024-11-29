@@ -7,12 +7,16 @@ LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0e
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PV = "2.0.0"
+PV = "2.0.1"
 
 inherit packagegroup features_check
 
 # Requires Wayland to work
 REQUIRED_DISTRO_FEATURES = "wayland"
+
+ST_APPS ?= "packagegroup-x-linux-qt-apps"
+ST_APPS:stm32mp13common = ""
+ST_APPS:stm32mp21common = ""
 
 PROVIDES = "${PACKAGES}"
 PACKAGES = "\
@@ -20,9 +24,9 @@ PACKAGES = "\
     packagegroup-x-linux-qt-core   \
     packagegroup-x-linux-qt-base   \
     packagegroup-x-linux-qt-extra  \
-    packagegroup-x-linux-qt-apps   \
     packagegroup-x-linux-qt-demos   \
     packagegroup-x-linux-qt-examples \
+    ${ST_APPS}                     \
     "
 
 # Manage to provide all Qt Framework core packages with overall one
@@ -30,9 +34,9 @@ RDEPENDS:packagegroup-x-linux-qt = "\
     packagegroup-x-linux-qt-core   \
     packagegroup-x-linux-qt-base   \
     packagegroup-x-linux-qt-extra  \
-    packagegroup-x-linux-qt-apps   \
     packagegroup-x-linux-qt-demos   \
     packagegroup-x-linux-qt-examples \
+    ${ST_APPS}                     \
     "
 
 SUMMARY:packagegroup-x-linux-qt-core = "X-LINUX-QT Core components"
@@ -53,6 +57,7 @@ RDEPENDS:packagegroup-x-linux-qt-core = "\
     rsync \
     tslib-calibrate \
     ${@bb.utils.contains("DISTRO_FEATURES", "systemd", "systemd-analyze", "", d)} \
+    openstlinux-qt \
     "
 
 SUMMARY:packagegroup-x-linux-qt-base = "X-LINUX-QT Base components"
@@ -76,6 +81,8 @@ RDEPENDS:packagegroup-x-linux-qt-base = "\
     qtmultimedia                    \
     qtmultimedia-plugins            \
     qtmultimedia-qmlplugins         \
+    \
+    qttools                         \
     "
 
 SUMMARY:packagegroup-x-linux-qt-extra = "X-LINUX-QT Extra components"
@@ -121,11 +128,14 @@ RDEPENDS:packagegroup-x-linux-qt-extra = "\
     qtremoteobjects             \
     qtremoteobjects-plugins     \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtremoteobjects-qmlplugins', '', d)} \
+    \
+    qtquickdesigner-components  \
     "
 
 SUMMARY:packagegroup-x-linux-qt-apps = "X-LINUX-QT Applications"
 RDEPENDS:packagegroup-x-linux-qt-apps = "\
-    stlauncher                  \
+    ${@bb.utils.contains("DISTRO_FEATURES", "wayland", "stlauncher", "", d)} \
+    ${@bb.utils.contains("DISTRO_FEATURES", "wayland", "stlauncher-example-opengl-cube", "", d)} \
     "
 
 ST_DEMOS = ""
@@ -142,5 +152,4 @@ RDEPENDS:packagegroup-x-linux-qt-examples = "\
     qtbase-examples             \
     qtvirtualkeyboard-examples  \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtquick3d-examples', '', d)} \
-    stlauncher-example-opengl-cube \
     "

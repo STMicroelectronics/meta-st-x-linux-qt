@@ -19,13 +19,15 @@ This expansion package is a complete ecosystem that allow developers working wit
 OpenEmbedded meta layer to install Qt frameworks and tools for the STM32MPU.
 
 ## Compatibility
-* The X-LINUX-QT OpenSTLinux Expansion Package v2.0.0 is compatible with the Yocto Project™ build systems (mickledore and later versions).
+* The X-LINUX-QT OpenSTLinux Expansion Package v2.0.1 is compatible with the Yocto Project™ build systems (mickledore and later versions).
 * It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v5.1.
 
 ## Supported STM32MPU devices
 This expansion package is supporting below STM32 MPU boards.
   * STM32MP257F-EV1
+  * STM32MP257F-DK
   * STM32MP157F-DK2
+  * STM32MP135F-DK
 
 ## Re-generate X-LINUX-QT OpenSTLinux distribution
 
@@ -39,7 +41,7 @@ This expansion package is supporting below STM32 MPU boards.
 
 ```
 cd <Distribution Package installation directory>/layers/meta-st
-git clone -b v2.0.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
+git clone -b v2.0.1 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
 ```
 
 * Clone the meta-qt6 git repository
@@ -143,7 +145,7 @@ List of Qt™ 6.5 Modules available in this expansion package:
 
 ## Further information on how to install and how to use X-LINUX-QT
 
-* [X-LINUX-QT v2.0.0 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
+* [X-LINUX-QT v2.0.1 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
 
 ## Further information on Qt 6.5 Framework and Tools
 

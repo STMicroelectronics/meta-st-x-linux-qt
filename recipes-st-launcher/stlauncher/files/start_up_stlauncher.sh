@@ -2,8 +2,8 @@
 source /etc/profile.d/weston_profile.sh
 source /etc/profile.d/qt_profile.sh
 
-# Default platform
-[[ -z "${QT_QPA_PLATFORM}" ]] && QT_QPA_PLATFORM=@platform@
+# Default platform is wayland
+[[ -z "${QT_QPA_PLATFORM}" ]] && QT_QPA_PLATFORM=wayland
 
 my_self=stlauncher
 my_pid=$(pidof -s ${my_self})
