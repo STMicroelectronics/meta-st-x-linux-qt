@@ -88,6 +88,7 @@ __SOFTWARE BILL OF MATERIALS__
 | __Qt Quick 3D__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
 | __Qt Quick Designer Components__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
 | __Qt Graphs__ | __The Qt Company__ | [__GPL-3.0-only__][GPL-3.0] |
+| __Qt PySide6__ | __The Qt Company__ | [__LGPL-3.0-only__][LGPL-3.0] |
 </div>
 
 __Notes:__ If the license is an open source license, then you can access the

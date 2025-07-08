@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;br
     file://platformdata-mp25xx.html \
     file://start_up_stlauncher.sh \
 "
-SRCREV = "3562b2a1e3f28173238ad6c874b66d67aa4615ec"
+SRCREV = "f3bd4739012ece277384cb72a9fe4e032e817ebb"
 
 PV = "2.0"
 

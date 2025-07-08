@@ -1,7 +1,7 @@
 #!/bin/sh
 source /etc/profile.d/qt_profile.sh
 
-EXAMPLE_APPLICATION="/usr/share/examples/opengl/cube/cube"
+EXAMPLE_APPLICATION="/usr/share/examples/opengl/cube/bin/cube"
 
 [[ ! -x ${EXAMPLE_APPLICATION} ]] && exit 1
 

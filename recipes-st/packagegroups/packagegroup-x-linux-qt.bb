@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0e
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PV = "2.1.0"
+PV = "2.2.0"
 
 inherit packagegroup features_check
 
@@ -134,6 +134,9 @@ RDEPENDS:packagegroup-x-linux-qt-extra = "\
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtremoteobjects-qmlplugins', '', d)} \
     \
     qtquickdesigner-components  \
+    \
+    python3-pyside6             \
+    \
     "
 
 SUMMARY:packagegroup-x-linux-qt-apps = "X-LINUX-QT Applications"

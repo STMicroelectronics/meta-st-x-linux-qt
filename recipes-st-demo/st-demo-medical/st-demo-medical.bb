@@ -4,6 +4,9 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/MIT;md5=0835ad
 
 COMPATIBLE_MACHINE = "(stm32mp2common)"
 
+# This package depends on the selected machine
+PACKAGE_ARCH = "${MACHINE_ARCH}"
+
 DEMO_APP_NAME := "medical"
 
 # Using source from Github repository
