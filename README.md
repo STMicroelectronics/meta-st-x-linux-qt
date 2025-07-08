@@ -48,7 +48,7 @@ git clone -b v2.2.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git
 * Clone the meta-qt6 git repository
 
 ```
- git clone -b 6.8.3 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
+ git clone -b 6.8.0 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
 ```
 
 * Clone the meta-clang git repository
