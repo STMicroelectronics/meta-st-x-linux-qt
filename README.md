@@ -51,17 +51,24 @@ git clone -b v2.2.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git
  git clone -b 6.8.3 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
 ```
 
+* Clone the meta-clang git repository
+
+```
+git clone https://github.com/kraj/meta-clang.git -b scarthgap
+```
+
+
 ### Source Yocto/openembedded build environment
 
 * For a new environment
 ```
-DISTRO=openstlinux-weston MACHINE=stm32mp2 BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt" source layers/meta-st/scripts/envsetup.sh
+DISTRO=openstlinux-weston MACHINE=stm32mp2 BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt layers/meta-clang" source layers/meta-st/scripts/envsetup.sh
 ```
 
 * For an already installed environment
 ```
 source layers/meta-st/scripts/envsetup.sh
-bitbake-layers add-layer ../layers/meta-qt6 ../layers/meta-st/meta-st-x-linux-qt
+bitbake-layers add-layer ../layers/meta-qt6 ../layers/meta-st/meta-st-x-linux-qt ../layers/meta-clang
 ```
 
 ### Build the X-LINUX-QT image
