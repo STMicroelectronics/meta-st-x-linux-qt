@@ -135,8 +135,6 @@ RDEPENDS:packagegroup-x-linux-qt-extra = "\
     \
     qtquickdesigner-components  \
     \
-    python3-pyside6             \
-    \
     "
 
 SUMMARY:packagegroup-x-linux-qt-apps = "X-LINUX-QT Applications"
