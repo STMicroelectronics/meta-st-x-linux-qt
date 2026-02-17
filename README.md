@@ -19,8 +19,8 @@ This expansion package is a complete ecosystem that allow developers working wit
 OpenEmbedded meta layer to install Qt frameworks and tools for the STM32MPU.
 
 ## Compatibility
-* The X-LINUX-QT OpenSTLinux Expansion Package v2.2.0 is compatible with the Yocto Project™ build systems (mickledore and later versions).
-* It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v5.1.
+* The X-LINUX-QT OpenSTLinux Expansion Package v2.3.0 is compatible with the Yocto Project™ build systems (scarthgap).
+* It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v6.2.
 
 ## Supported STM32MPU devices
 This expansion package is supporting below STM32 MPU boards.
@@ -38,23 +38,19 @@ This expansion package is supporting below STM32 MPU boards.
 
 ### Install X-LINUX-QT environment
 
+* Please follow instructions from the wiki article [STM32MP X-LINUX-QT Distribution package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Distribution_Package)
+
 * Clone the meta-st-x-linux-qt git repository
 
 ```
 cd <Distribution Package installation directory>
-git clone -b v2.2.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
+git clone -b v2.3.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
 ```
 
 * Clone the meta-qt6 git repository
 
 ```
- git clone -b 6.8.0 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
-```
-
-* Clone the meta-clang git repository
-
-```
-git clone https://github.com/kraj/meta-clang.git -b scarthgap
+ git clone -b 6.8.2 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
 ```
 
 
@@ -62,13 +58,13 @@ git clone https://github.com/kraj/meta-clang.git -b scarthgap
 
 * For a new environment
 ```
-DISTRO=openstlinux-weston MACHINE=stm32mp2 BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt layers/meta-clang" source layers/meta-st/scripts/envsetup.sh
+DISTRO=openstlinux-weston MACHINE=stm32mp2 BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt" source layers/meta-st/scripts/envsetup.sh
 ```
 
 * For an already installed environment
 ```
 source layers/meta-st/scripts/envsetup.sh
-bitbake-layers add-layer ../layers/meta-qt6 ../layers/meta-st/meta-st-x-linux-qt ../layers/meta-clang
+bitbake-layers add-layer ../layers/meta-qt6 ../layers/meta-st/meta-st-x-linux-qt
 ```
 
 ### Build the X-LINUX-QT image
@@ -85,7 +81,7 @@ bitbake st-image-qt -c do_populate_sdk
 
 ## Further information on how to install and how to use X-LINUX-QT
 
-* [X-LINUX-QT v2.2.0 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
+* [X-LINUX-QT v2.3.0 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
 
 ## Further information on [Qt 6.8 All Modules](https://doc.qt.io/qt-6.8/qtmodules.html)
 
