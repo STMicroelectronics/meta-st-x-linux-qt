@@ -32,3 +32,11 @@ QT_CONFIG_FLAGS:remove:stm32mp2common = "-no-opengles3"
 QT_CONFIG_FLAGS:append:stm32mp2common = " -opengles3"
 
 QT_QPA_EGLFS_INTEGRATION ?= ""
+
+# Patch to fix building issue
+do_install:append() {
+	if [ -e ${D}${QT6_INSTALL_EXAMPLESDIR}/corelib/serialization/cbordump/cbortag.py ]; then
+		sed -i ${D}${QT6_INSTALL_EXAMPLESDIR}/corelib/serialization/cbordump/cbortag.py \
+			-e 's|/usr/usr/bin/env|/usr/bin/env|'
+	fi
+}
