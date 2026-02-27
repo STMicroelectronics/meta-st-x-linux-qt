@@ -17,7 +17,7 @@
   <remote name="code.qt.io" fetch="https://code.qt.io/" />
   <remote name="github.com" fetch="https://github.com/" />
   <project remote="github.com" name="STMicroelectronics/meta-st-x-linux-qt" path="layers/meta-st/meta-st-x-linux-qt" revision="295c97f189b6ff05c5f3a81c4b545386b2145310" />
-  <project remote="code.qt.io" name="yocto/meta-boot2qt" path="layers/meta-boot2qt/meta-boot2qt" revision="d99ed404a7dfbee05799cad5ccd622b8c4f9a655" />
+  <project remote="code.qt.io" name="yocto/meta-boot2qt" path="layers/meta-boot2qt" revision="d99ed404a7dfbee05799cad5ccd622b8c4f9a655" />
   <project remote="code.qt.io" name="yocto/meta-qt6" path="layers/meta-qt6" revision="0069ff27c3b0d4977254a700732f207f2f8b17a3" />
 
 </manifest>
