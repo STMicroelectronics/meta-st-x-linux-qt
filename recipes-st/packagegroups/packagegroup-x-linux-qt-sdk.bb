@@ -46,3 +46,5 @@ RDEPENDS:nativesdk-packagegroup-x-linux-qt-sdk = "\
 
 TOOLCHAIN_HOST_TASK:append = " nativesdk-packagegroup-x-linux-qt-sdk"
 TOOLCHAIN_TARGET_TASK:append = " packagegroup-x-linux-qt-embedded-toolchain-target"
+
+TOOLCHAIN_HOST_TASK:append = " nativesdk-packagegroup-qt6-toolchain-host"

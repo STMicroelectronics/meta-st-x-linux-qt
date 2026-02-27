@@ -7,7 +7,7 @@ LIC_FILES_CHKSUM += "file://${COMMON_LICENSE_DIR}/BSD-3-Clause;md5=550794465ba0e
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PV = "2.3.0"
+PV = "qbsp2.3.0"
 
 inherit packagegroup features_check
 
