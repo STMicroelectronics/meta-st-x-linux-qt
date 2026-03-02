@@ -38,7 +38,7 @@ repo sync
 
 ### Source Yocto/openembedded build environment
 
-MACHINE can target stm32mp21-disco or other platforms. One example is:
+MACHINE can target stm32mp25-disco or other platforms. One example is:
 
 ```
 DISTRO=openstlinux-weston MACHINE=stm32mp25-disco source layers/meta-st/scripts/envsetup.sh
