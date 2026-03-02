@@ -22,10 +22,8 @@ DEPLOY_CONF_TYPE = "OpenSTLinux"
 
 QBSP_DEVICE_IP = "192.168.7.1"
 
-# define the location of the QBSP component inside the online installer tree
-QBSP_INSTALLER_COMPONENT = "embedded.ostl.${VERSION_SHORT}.${QBSP_MACHINE}"
-VERSION_SHORT = "${@d.getVar('QT_VERSION').replace('.','')}"
-QBSP_MACHINE = "${@d.getVar('MACHINE').replace('-','')}"
+# define QBSP PRODUCT component for the online installer tree
+QBSP_PRODUCT = "ostl"
 
 # path where qbsp content is installed under the SDK installation root
 QBSP_INSTALL_PATH = "/${QT_VERSION}/OSTL-QT/${MACHINE}"
