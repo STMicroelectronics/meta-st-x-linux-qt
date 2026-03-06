@@ -10,6 +10,7 @@ SRC_URI = "git://github.com/STMicroelectronics/st-launcher.git;protocol=https;br
     file://platformdata-mp15xx.html \
     file://platformdata-mp25xx.html \
     file://start_up_stlauncher.sh \
+    file://stlauncher.service \
 "
 SRCREV = "6253ac71bf741bce5d0fb9f9c50296888f20b530"
 
@@ -56,10 +57,18 @@ do_install() {
     install -d ${D}${prefix}/local/weston-start-at-startup
     install -m 0755 ${WORKDIR}/start_up_stlauncher.sh ${D}${prefix}/share/qt/${P}
 
-    # Set STLauncher as default demo-launcher
+    # Nothing in demo-launcher, but will avoid to run GTK launcher
     install -m 0755 -d ${D}${sysconfdir}/default
-    echo "DEFAULT_DEMO_APPLICATION=${prefix}/share/qt/${P}/start_up_stlauncher.sh" >  ${D}${sysconfdir}/default/demo-launcher
+    # Dummy command
+    echo 'DEFAULT_DEMO_APPLICATION="ls /usr/lib/systemd/system/stlauncher.service"' >  ${D}${sysconfdir}/default/demo-launcher
+
+    # Install stlauncher.service to start qtlauncher/startupscreen
+    install -d ${D}/usr/lib/systemd/system
+    install -m 0755 ${WORKDIR}/stlauncher.service ${D}/usr/lib/systemd/system
 }
+
+SYSTEMD_SERVICE:${PN} = "stlauncher.service"
+SYSTEMD_AUTO_ENABLE:${PN} = "enable"
 
 RDEPENDS:${PN} = "\
     qt5compat \
@@ -72,7 +81,7 @@ RDEPENDS:${PN} = "\
     qtvirtualkeyboard-qmlplugins \
 "
 
-FILES:${PN} += "${sysconfdir}/default ${sysconfdir}/etc/profile.d ${datadir}/pixmaps ${prefix}/share/qt/${P} ${prefix}/local ${prefix}/share/config"
+FILES:${PN} += "${sysconfdir}/default ${sysconfdir}/etc/profile.d ${datadir}/pixmaps ${prefix}/share/qt/${P} ${prefix}/local ${prefix}/share/config ${prefix}/lib/systemd/system"
 
 #inherit useradd
 USERADD_PARAM:${PN} = "--home /home/weston --shell /bin/sh --user-group -G video,input,tty,audio,weston-launch,dialout weston"

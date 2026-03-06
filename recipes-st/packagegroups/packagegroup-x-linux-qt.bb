@@ -15,8 +15,6 @@ inherit packagegroup features_check
 REQUIRED_DISTRO_FEATURES = "wayland"
 
 ST_APPS ?= "packagegroup-x-linux-qt-apps"
-ST_APPS:stm32mp13common = ""
-ST_APPS:stm32mp21common = ""
 
 PROVIDES = "${PACKAGES}"
 PACKAGES = "\

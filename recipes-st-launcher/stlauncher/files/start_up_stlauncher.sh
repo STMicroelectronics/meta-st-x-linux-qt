@@ -10,6 +10,9 @@ if [[ -e /dev/galcore ]]; then
 	my_self=qtlauncher
 else
 	my_self=startupscreen
+	# for MPU without GPU, linuxfb backend used instead of wayland
+	systemctl stop weston-graphical-session.service
+	/usr/bin/psplash-drm-quit
 fi
 
 my_pid=$(pidof -s ${my_self})
@@ -18,6 +21,6 @@ if [[ -n "${my_pid}" ]] ; then
   echo "Process \"${my_self}\" is already running"
   exit 1
 else
-  /usr/bin/${my_self} -platform ${QT_QPA_PLATFORM} --fullscreen
+  exec /usr/bin/${my_self} -platform ${QT_QPA_PLATFORM} --fullscreen
   exit ${?}
 fi

@@ -1,0 +1,10 @@
+[Unit]
+Description="stlauncher for Qt startupscreen"
+After=weston-graphical-session.service
+
+[Service]
+Type=simple
+ExecStart=/usr/share/qt/stlauncher-2.0/start_up_stlauncher.sh
+
+[Install]
+WantedBy=multi-user.target
