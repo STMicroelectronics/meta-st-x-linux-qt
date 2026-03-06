@@ -14,7 +14,7 @@
   <project name="meta-st-scripts" path="layers/meta-st/scripts" revision="8826802b453ef2ead61b07c7bc5ab525a405df04"/>
   <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="6988157ad983978ffd6b12bcefedd4deaffdbbd1"/>
   
-  <project name="meta-st-x-linux-qt" path="layers/meta-st/meta-st-x-linux-qt" revision="8e0147c05251aedf2fad93e86d41b650b5daf0d4" />
+  <project name="meta-st-x-linux-qt" path="layers/meta-st/meta-st-x-linux-qt" revision="dfa15a8c74d209324cbf50d5a713d6f46714acea" />
 
   <remote name="code.qt.io" fetch="https://code.qt.io/" />
   <remote name="github.com" fetch="https://github.com/" />
