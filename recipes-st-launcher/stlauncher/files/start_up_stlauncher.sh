@@ -21,6 +21,6 @@ if [[ -n "${my_pid}" ]] ; then
   echo "Process \"${my_self}\" is already running"
   exit 1
 else
-  exec /usr/bin/${my_self} -platform ${QT_QPA_PLATFORM} --fullscreen
+  su -l weston -c "/usr/bin/${my_self} -platform ${QT_QPA_PLATFORM} --fullscreen"
   exit ${?}
 fi
