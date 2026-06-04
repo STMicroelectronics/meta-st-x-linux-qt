@@ -21,6 +21,11 @@ if [[ -n "${my_pid}" ]] ; then
   echo "Process \"${my_self}\" is already running"
   exit 1
 else
-  su -l weston -c "/usr/bin/${my_self} -platform ${QT_QPA_PLATFORM} --fullscreen"
+	cmd_args="-platform ${QT_QPA_PLATFORM} --fullscreen"
+	if [[ "${my_self}" = "qtlauncher" ]]; then
+		cmd_args="${cmd_args} --applications-root /usr/local/demo/qtlauncher-apps"
+	fi
+
+	su -l weston -c "/usr/bin/${my_self} ${cmd_args}"
   exit ${?}
 fi

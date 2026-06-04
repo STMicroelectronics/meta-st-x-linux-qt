@@ -15,9 +15,9 @@ SRC_URI = "git://github.com/STMicroelectronics/st-demo-robotarm3d.git;protocol=h
            file://Icon_demo_${DEMO_APP_NAME}.svg \
            file://launch_${DEMO_APP_NAME}.sh \
 "
-SRCREV = "326cab1d6a4ac69f54f82b537a9ccd92c28086ac"
+SRCREV = "ef9350293bba90f067fa04871bf83028f7b50ddd"
 
-PV = "2.1"
+PV = "2.2"
 
 inherit qt6-qmake systemd
 

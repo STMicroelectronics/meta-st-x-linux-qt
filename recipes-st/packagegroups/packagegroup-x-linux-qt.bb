@@ -15,6 +15,7 @@ inherit packagegroup features_check
 REQUIRED_DISTRO_FEATURES = "wayland"
 
 ST_APPS ?= "packagegroup-x-linux-qt-apps"
+ST_ECHOCARDIO_DEMO ?= "0"
 
 PROVIDES = "${PACKAGES}"
 PACKAGES = "\
@@ -145,6 +146,7 @@ ST_DEMOS = ""
 ST_DEMOS:append:stm32mp2common = "\
     st-demo-medical             \
     st-demo-robotarm3d          \
+    ${@bb.utils.contains('ST_ECHOCARDIO_DEMO', '1', 'qt-demo-echocardio', '', d)} \
     "
 
 SUMMARY:packagegroup-x-linux-qt-demos = "X-LINUX-QT Application Demos"

@@ -18,43 +18,44 @@ do_compile() {
 		sed -i "s/_NAME_/$2/g" ${WORKDIR}/processed/ostl-qt-embedded-qt6-image-$1.conf
 		sed -i "s/_BOOT2QTVERSION_/$3/g" ${WORKDIR}/processed/ostl-qt-embedded-qt6-image-$1.conf
 		sed -i "s/_BOARD_/$4/g" ${WORKDIR}/processed/ostl-qt-embedded-qt6-image-$1.conf
-		export rawfilesize=$(stat --format="%s" ${DEPLOY_DIR_IMAGE}/FlashLayout_sdcard_$4-optee.raw)
+		sed -i "s/_BOOTSCHEME_/$5/g" ${WORKDIR}/processed/ostl-qt-embedded-qt6-image-$1.conf
+        export rawfilesize=$(stat --format="%s" ${DEPLOY_DIR_IMAGE}/FlashLayout_sdcard_$4-$5.raw)
 		sed -i "s/_SIZE_/${rawfilesize}/g" ${WORKDIR}/processed/ostl-qt-embedded-qt6-image-$1.conf
 	}
 
     # Determine the board name based on the MACHINE variable
     case "${MACHINE}" in
         stm32mp25-disco)
-            generic_replace "stm32mp25-disco" "STM32MP25 Discovery" ${QT_VERSION} "stm32mp257f-dk"
+            generic_replace "stm32mp25-disco" "STM32MP25 Discovery" ${QT_VERSION} "stm32mp257f-dk" "optee"
             ;;
         stm32mp23-disco)
-			generic_replace "stm32mp23-disco" "STM32MP23 Discovery" ${QT_VERSION} "stm32mp235f-dk"
+			generic_replace "stm32mp23-disco" "STM32MP23 Discovery" ${QT_VERSION} "stm32mp235f-dk" "optee"
             ;;
         stm32mp21-disco)
-			generic_replace "stm32mp21-disco" "STM32MP21 Discovery" ${QT_VERSION} "stm32mp215f-dk"
+			generic_replace "stm32mp21-disco" "STM32MP21 Discovery" ${QT_VERSION} "stm32mp215f-dk" "optee"
             ;;
         stm32mp25-eval)
-			generic_replace "stm32mp25-eval" "STM32MP25 Eval" ${QT_VERSION} "stm32mp257f-ev1"
+			generic_replace "stm32mp25-eval" "STM32MP25 Eval" ${QT_VERSION} "stm32mp257f-ev1" "optee"
             ;;
         stm32mp15-disco)
-			generic_replace "stm32mp15-disco" "STM32MP15 Discovery" ${QT_VERSION} "stm32mp157f-dk2"
+			generic_replace "stm32mp15-disco" "STM32MP15 Discovery" ${QT_VERSION} "stm32mp157f-dk2" "opteemin"
             ;;
         stm32mp13-disco)
-			generic_replace "stm32mp13-disco" "STM32MP13 Discovery" ${QT_VERSION} "stm32mp135f-dk"
+			generic_replace "stm32mp13-disco" "STM32MP13 Discovery" ${QT_VERSION} "stm32mp135f-dk" "opteemin"
             ;;
         stm32mp15-eval)
-			generic_replace "stm32mp15-eval" "STM32MP15 Eval" ${QT_VERSION} "stm32mp157f-ev1"
+			generic_replace "stm32mp15-eval" "STM32MP15 Eval" ${QT_VERSION} "stm32mp157f-ev1" "opteemin"
             ;;
         stm32mp2)
-            generic_replace "stm32mp25-disco" "STM32MP25 Discovery" ${QT_VERSION} "stm32mp257f-dk"
-			generic_replace "stm32mp23-disco" "STM32MP23 Discovery" ${QT_VERSION} "stm32mp235f-dk"
-			generic_replace "stm32mp21-disco" "STM32MP21 Discovery" ${QT_VERSION} "stm32mp215f-dk"
-			generic_replace "stm32mp25-eval" "STM32MP25 Eval" ${QT_VERSION} "stm32mp257f-ev1"
+            generic_replace "stm32mp25-disco" "STM32MP25 Discovery" ${QT_VERSION} "stm32mp257f-dk" "optee"
+			generic_replace "stm32mp23-disco" "STM32MP23 Discovery" ${QT_VERSION} "stm32mp235f-dk" "optee"
+			generic_replace "stm32mp21-disco" "STM32MP21 Discovery" ${QT_VERSION} "stm32mp215f-dk" "optee"
+			generic_replace "stm32mp25-eval" "STM32MP25 Eval" ${QT_VERSION} "stm32mp257f-ev1" "optee"
             ;;
         stm32mp1)
-			generic_replace "stm32mp15-disco" "STM32MP15 Discovery" ${QT_VERSION} "stm32mp157f-dk2"
-			generic_replace "stm32mp13-disco" "STM32MP13 Discovery" ${QT_VERSION} "stm32mp135f-dk"
-			generic_replace "stm32mp15-eval" "STM32MP15 Eval" ${QT_VERSION} "stm32mp157f-ev1"
+			generic_replace "stm32mp15-disco" "STM32MP15 Discovery" ${QT_VERSION} "stm32mp157f-dk2" "opteemin"
+			generic_replace "stm32mp13-disco" "STM32MP13 Discovery" ${QT_VERSION} "stm32mp135f-dk" "opteemin"
+			generic_replace "stm32mp15-eval" "STM32MP15 Eval" ${QT_VERSION} "stm32mp157f-ev1" "opteemin"
             ;;            
     esac
 
