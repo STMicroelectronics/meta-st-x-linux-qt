@@ -19,6 +19,6 @@
   <remote name="code.qt.io" fetch="https://code.qt.io/" />
   <remote name="github.com" fetch="https://github.com/" />
   <project remote="code.qt.io" name="yocto/meta-boot2qt" path="layers/meta-boot2qt" revision="804f1461b17b1f3e0ff8b32a13334ee5e9b44dc7" />
-  <project remote="code.qt.io" name="yocto/meta-qt6" path="layers/meta-qt6" revision="0069ff27c3b0d4977254a700732f207f2f8b17a3" />
+  <project remote="code.qt.io" name="yocto/meta-qt6" path="layers/meta-qt6" revision="2b8e3a50d8b8f484e4fc9ca4d6ec340acb15b724" />
 
 </manifest>
