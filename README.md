@@ -62,6 +62,17 @@ QT_EDITION = "commercial"
 bitbake meta-qbsp-ostl-qt
 ```
 
+### Use the Qt Board Support Package (QBSP)
+
+* <https://doc.qt.io/QtOnboard/qtonboard-qsg-st.html>
+
+Note: for MPU without GPU (STM32MP215, STM32MP135), Qt EGLFS configuration is used.
+No wayland window management is available and only one Qt application can launched at a time.
+So default Qt startupscreen must be killed before running your own application:
+```
+"killall startupscreen"
+```
+
 ## Further information on Qt Group and STMicroelectronics partnership
 
 * <https://www.st.com/content/st_com/en/partner/partner-program/partnerpage/Qt.html>
