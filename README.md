@@ -61,6 +61,7 @@ QT_EDITION = "commercial"
 ```
 bitbake meta-qbsp-ostl-qt
 ```
+After the build has been completed, you can find the QBSP file at build-openstlinuxweston-stm32mp25-disco/tmp-glibc/deploy/qbsp/meta-qbsp-ostl-qt-x86_64-stm32mp25-disco-6.8.7.qbsp.
 
 ### Use the Qt Board Support Package (QBSP)
 
