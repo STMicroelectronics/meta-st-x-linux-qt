@@ -6,15 +6,15 @@
   
   <default remote="OpenSTLinux"/>
   
-  <project name="bitbake" path="layers/openembedded-core/bitbake" remote="oe" revision="8dcf084522b9c66a6639b5f117f554fde9b6b45a"/>
-  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="2759d8870ea387b76c902070bed8a6649ff47b56"/>
-  <project name="meta-st-openstlinux" path="layers/meta-st/meta-st-openstlinux" revision="993e43adedbfe95dca8e93a64ec091a83a604633"/>
-  <project name="meta-st-stm32mp" path="layers/meta-st/meta-st-stm32mp" revision="e53460d9939f5e2c71f203d50f4dad8977237d21"/>
-  <project name="meta-st-stm32mp-addons" path="layers/meta-st/meta-st-stm32mp-addons" revision="3597fb343419edd78c3d9b1505a9f3eb0469efbd"/>
+  <project name="bitbake" path="layers/openembedded-core/bitbake" remote="oe" revision="b2404004135b669f8258c85c7b5aed4570a805c7"/>
+  <project name="meta-openembedded" path="layers/meta-openembedded" remote="oe" revision="5124ac4a658899158f4a7a2ddf1d2ca931ec7d0e"/>
+  <project name="meta-st-openstlinux" path="layers/meta-st/meta-st-openstlinux" revision="b0316f706bcf34e8449d43aba3c630030f2cc366"/>
+  <project name="meta-st-stm32mp" path="layers/meta-st/meta-st-stm32mp" revision="49046b2a0ad4dc29117025c94838b9befff86f23"/>
+  <project name="meta-st-stm32mp-addons" path="layers/meta-st/meta-st-stm32mp-addons" revision="ad667afe266eb1ca706bf92ea6d99cc9ec74d662"/>
   <project name="meta-st-scripts" path="layers/meta-st/scripts" revision="8826802b453ef2ead61b07c7bc5ab525a405df04"/>
-  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="6988157ad983978ffd6b12bcefedd4deaffdbbd1"/>
+  <project name="openembedded-core" path="layers/openembedded-core" remote="oe" revision="52380df998b3a8fe6a091f8547434a3231320a8e"/>
   
-  <project name="meta-st-x-linux-qt" path="layers/meta-st/meta-st-x-linux-qt" revision="b11c4d15cc8f013c5eef1991e03c5ba46a756d81" />
+  <project name="meta-st-x-linux-qt" path="layers/meta-st/meta-st-x-linux-qt" revision="4f321eff360c32e6f47d30a8424e840d625779ad" />
 
   <remote name="code.qt.io" fetch="https://code.qt.io/" />
   <remote name="github.com" fetch="https://github.com/" />
