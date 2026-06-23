@@ -20,7 +20,7 @@ OpenEmbedded meta layer to install Qt frameworks and tools for the STM32MPU.
 
 ## Compatibility
 * The X-LINUX-QT OpenSTLinux Expansion Package v2.3.0 is compatible with the Yocto Project™ build systems (scarthgap).
-* It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v6.2.
+* It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v6.2.x
 
 ## Supported STM32MPU devices
 This expansion package is supporting below STM32 MPU boards.
@@ -50,7 +50,7 @@ git clone -b v2.3.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git
 * Clone the meta-qt6 git repository
 
 ```
- git clone -b 6.8.2 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
+ git clone -b 6.8.3 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
 ```
 
 
