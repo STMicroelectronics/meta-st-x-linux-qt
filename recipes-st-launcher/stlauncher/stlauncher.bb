@@ -25,20 +25,18 @@ ST_LAUNCHER_FULL_PATH := "${prefix}/share/qt/${P}/stlauncher"
 
 DEPENDS = "qtbase qtcharts qtdeclarative qtquicktimeline"
 
-S = "${WORKDIR}/git"
-
 # Install platformdata.html for MP1
 do_install:append:stm32mp1common() {
     # platformdata*.txt files
     install -d ${D}${prefix}/share/config
-    install -m 0755 ${WORKDIR}/platformdata-mp15xx.html ${D}${prefix}/share/config/platformdata.txt
+    install -m 0755 ${UNPACKDIR}/platformdata-mp15xx.html ${D}${prefix}/share/config/platformdata.txt
 }
 
 # Install platformdata.html for MP2
 do_install:append:stm32mp2common() {
     # platformdata*.txt files
     install -d ${D}${prefix}/share/config
-    install -m 0755 ${WORKDIR}/platformdata-mp25xx.html ${D}${prefix}/share/config/platformdata.txt
+    install -m 0755 ${UNPACKDIR}/platformdata-mp25xx.html ${D}${prefix}/share/config/platformdata.txt
 }
 
 do_install() {
@@ -47,14 +45,14 @@ do_install() {
     cp -R --no-dereference --preserve=mode,links ${S}/qml ${D}${prefix}/share/qt/${P}
 
     install -d ${D}${datadir}/pixmaps
-    install -m 0644 ${WORKDIR}/qt-app.svg ${D}${datadir}/pixmaps
+    install -m 0644 ${UNPACKDIR}/qt-app.svg ${D}${datadir}/pixmaps
 
     # update the start_up_stlauncher.sh script
-    sed -i -e 's,@stlauncher@,${P},g' ${WORKDIR}/start_up_stlauncher.sh
+    sed -i -e 's,@stlauncher@,${P},g' ${UNPACKDIR}/start_up_stlauncher.sh
 
     # Install the startup script
     install -d ${D}${prefix}/local/weston-start-at-startup
-    install -m 0755 ${WORKDIR}/start_up_stlauncher.sh ${D}${prefix}/share/qt/${P}
+    install -m 0755 ${UNPACKDIR}/start_up_stlauncher.sh ${D}${prefix}/share/qt/${P}
 
     # Set STLauncher as default demo-launcher
     install -m 0755 -d ${D}${sysconfdir}/default

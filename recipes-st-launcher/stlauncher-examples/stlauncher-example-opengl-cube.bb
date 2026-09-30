@@ -23,15 +23,15 @@ do_compile[noexec] = "1"
 do_install() {
     # install script
     install -d ${D}${prefix}/local/demo/application/stlauncher-examples/bin
-    install -m 0755 ${WORKDIR}/launch_${EXAMPLE_APP_NAME}.sh ${D}${prefix}/local/demo/application/stlauncher-examples/bin
+    install -m 0755 ${UNPACKDIR}/launch_${EXAMPLE_APP_NAME}.sh ${D}${prefix}/local/demo/application/stlauncher-examples/bin
 
     # install desktop file
     install -d ${D}${datadir}/applications
-    install -m 0644 ${WORKDIR}/${EXAMPLE_APP_NAME}.desktop ${D}${datadir}/applications
+    install -m 0644 ${UNPACKDIR}/${EXAMPLE_APP_NAME}.desktop ${D}${datadir}/applications
 
     # install icon file
     install -d ${D}${datadir}/pixmaps
-    install -m 0644 ${WORKDIR}/Icon_demo_${EXAMPLE_APP_NAME}.svg ${D}${datadir}/pixmaps
+    install -m 0644 ${UNPACKDIR}/Icon_demo_${EXAMPLE_APP_NAME}.svg ${D}${datadir}/pixmaps
 }
 
 RDEPENDS:${PN} = "\

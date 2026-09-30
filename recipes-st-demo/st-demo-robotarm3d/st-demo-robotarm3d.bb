@@ -23,8 +23,6 @@ inherit qt6-qmake systemd
 
 DEPENDS = "qtbase qtcharts qtdeclarative qtquicktimeline"
 
-S = "${WORKDIR}/git"
-
 do_install() {
     # Install the application
     install -d ${D}${prefix}/local/demo/${DEMO_APP_NAME}
@@ -32,15 +30,15 @@ do_install() {
 
     # install script
     install -d ${D}${prefix}/local/demo/application/${DEMO_APP_NAME}/bin
-    install -m 0755 ${WORKDIR}/launch_${DEMO_APP_NAME}.sh ${D}${prefix}/local/demo/application/${DEMO_APP_NAME}/bin
+    install -m 0755 ${UNPACKDIR}/launch_${DEMO_APP_NAME}.sh ${D}${prefix}/local/demo/application/${DEMO_APP_NAME}/bin
 
     # install desktop file
     install -d ${D}${datadir}/applications
-    install -m 0644 ${WORKDIR}/${DEMO_APP_NAME}.desktop ${D}${datadir}/applications
+    install -m 0644 ${UNPACKDIR}/${DEMO_APP_NAME}.desktop ${D}${datadir}/applications
 
     # install pictures
     install -d ${D}${datadir}/pixmaps
-    install -m 0644 ${WORKDIR}/Icon_demo_${DEMO_APP_NAME}.svg ${D}${datadir}/pixmaps
+    install -m 0644 ${UNPACKDIR}/Icon_demo_${DEMO_APP_NAME}.svg ${D}${datadir}/pixmaps
 }
 
 RDEPENDS:${PN} = "\

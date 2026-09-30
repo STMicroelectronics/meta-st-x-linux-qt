@@ -26,28 +26,26 @@ SRC_URI = " \
     file://cursor.json \
     "
 
-S = "${WORKDIR}"
-
-PV = "2.0"
+PV = "2.4"
 
 do_install() {
     # update the qt-defaults file
-    sed -i -e 's,@platform@,${DIST_QT_PLATFORM},g' ${WORKDIR}/qt-defaults.${DIST_QT_PLATFORM}
+    sed -i -e 's,@platform@,${DIST_QT_PLATFORM},g' ${UNPACKDIR}/qt-defaults.${DIST_QT_PLATFORM}
 
     # update the qt_profile.sh file
-    sed -i -e 's,@platform@,${DIST_QT_PLATFORM},g' ${WORKDIR}/qt_profile.sh
+    sed -i -e 's,@platform@,${DIST_QT_PLATFORM},g' ${UNPACKDIR}/qt_profile.sh
 
     # cursor.json file
     install -d ${D}${prefix}/share/qt6
-    install -m 0755 ${WORKDIR}/cursor.json ${D}${prefix}/share/qt6/cursor.json
+    install -m 0755 ${UNPACKDIR}/cursor.json ${D}${prefix}/share/qt6/cursor.json
 
     # install the qt-defaults file
     install -m 0755 -d ${D}${sysconfdir}/default
-    install -m 0755 ${WORKDIR}/qt-defaults.${DIST_QT_PLATFORM} ${D}${sysconfdir}/default/qt
+    install -m 0755 ${UNPACKDIR}/qt-defaults.${DIST_QT_PLATFORM} ${D}${sysconfdir}/default/qt
 
     # install the qt_profile.sh file
     install -d ${D}${sysconfdir}/profile.d
-    install -m 0755 ${WORKDIR}/qt_profile.sh ${D}${sysconfdir}/profile.d/
+    install -m 0755 ${UNPACKDIR}/qt_profile.sh ${D}${sysconfdir}/profile.d/
 }
 
 RDEPENDS:${PN} = "qtbase"

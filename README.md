@@ -19,7 +19,7 @@ This expansion package is a complete ecosystem that allow developers working wit
 OpenEmbedded meta layer to install Qt frameworks and tools for the STM32MPU.
 
 ## Compatibility
-* The X-LINUX-QT OpenSTLinux Expansion Package v2.3.0 is compatible with the Yocto Project™ build systems (scarthgap).
+* The X-LINUX-QT OpenSTLinux Expansion Package v2.4.0 is compatible with the Yocto Project™ build systems (wrynose).
 * It is validated using the *_Qt6 OpenEmbedded/Yocto Project layer_* [(*_meta-qt6_*)](https://code.qt.io/yocto/meta-qt6.git) over the OpenSTLinux Distributions v6.2.x
 
 ## Supported STM32MPU devices
@@ -44,13 +44,13 @@ This expansion package is supporting below STM32 MPU boards.
 
 ```
 cd <Distribution Package installation directory>
-git clone -b v2.3.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
+git clone -b v2.4.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git layers/meta-st/meta-st-x-linux-qt
 ```
 
 * Clone the meta-qt6 git repository
 
 ```
- git clone -b 6.8.3 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
+ git clone -b v6.11.2 https://code.qt.io/yocto/meta-qt6.git layers/meta-qt6
 ```
 
 
@@ -58,7 +58,7 @@ git clone -b v2.3.0 https://github.com/STMicroelectronics/meta-st-x-linux-qt.git
 
 * For a new environment
 ```
-DISTRO=openstlinux-weston MACHINE=stm32mp2 BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt" source layers/meta-st/scripts/envsetup.sh
+DISTRO=openstlinux-weston MACHINE=stm32mp25-disco BSP_DEPENDENCY="layers/meta-qt6 layers/meta-st/meta-st-x-linux-qt" source layers/meta-st/scripts/envsetup.sh
 ```
 
 * For an already installed environment
@@ -81,15 +81,15 @@ bitbake st-image-qt -c do_populate_sdk
 
 ## Further information on how to install and how to use X-LINUX-QT
 
-* [X-LINUX-QT v2.3.0 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
+* [X-LINUX-QT v2.4.0 expansion package](https://wiki.st.com/stm32mpu/wiki/X-LINUX-QT_Expansion_Package)
 
-## Further information on [Qt 6.8 All Modules](https://doc.qt.io/qt-6.8/qtmodules.html)
+## Further information on [Qt 6.11 All Modules](https://doc.qt.io/qt-6.11/qtmodules.html)
 
-* <https://doc.qt.io/qt-6.8/qtmodules.html>
+* <https://doc.qt.io/qt-6.11/qtmodules.html>
 
-## Further information on Qt 6.8 Framework and Tools
+## Further information on Qt 6.11 Framework and Tools
 
-* <https://doc.qt.io/qt-6.8/>
+* <https://doc.qt.io/qt-6.11/>
 
 ## Further information on Qt Group and STMicroelectronics partnership
 

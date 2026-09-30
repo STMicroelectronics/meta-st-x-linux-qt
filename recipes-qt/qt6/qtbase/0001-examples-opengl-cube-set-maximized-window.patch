@@ -1,16 +1,17 @@
-From d0f0a1b67f530ff7a4c9ddce32823a948a672177 Mon Sep 17 00:00:00 2001
-From: Karim BEN BELGACEM <karim.ben-belgacem@st.com>
-Date: Mon, 20 May 2024 13:56:45 +0200
-Subject: [PATCH] examples - opengl-cube: set maximized window
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Philippe PAGE <philippe.page@st.com>
+Date: Wed, 30 Sep 2026 13:59:55 +0200
+Subject: [PATCH] examples - opengl-cube: show fullscreen window
 
-Change-Id: I20bc822425506697dd00a5e8a476ba54a4508cd5
-Signed-off-by: Karim BEN BELGACEM <karim.ben-belgacem@st.com>
+Upstream-Status: Inappropriate [OpenSTLinux-specific default window behavior]
+
+Signed-off-by: Philippe PAGE <philippe.page@st.com>
 ---
  examples/opengl/cube/main.cpp | 2 +-
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/examples/opengl/cube/main.cpp b/examples/opengl/cube/main.cpp
-index c5c77d3d5b..b6aff81ef3 100644
+index c5c77d3d5bcaa47fdbe6766f9123578db3a39031..1727e05d251aadbe8fad1ef53e535653b1abbbf8 100644
 --- a/examples/opengl/cube/main.cpp
 +++ b/examples/opengl/cube/main.cpp
 @@ -21,7 +21,7 @@ int main(int argc, char *argv[])

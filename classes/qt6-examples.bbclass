@@ -1,6 +1,3 @@
-# Add examples
-PACKAGECONFIG:append = " examples"
-
 QT_INSTALL_EXAMPLES_SOURCES := "ON"
 EXTRA_OECMAKE:append:class-target = "\
     -DQT_INSTALL_EXAMPLES_SOURCES=${QT_INSTALL_EXAMPLES_SOURCES} \
